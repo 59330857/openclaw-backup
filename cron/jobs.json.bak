@@ -1,41 +1,4 @@
 {
   "version": 1,
-  "jobs": [
-    {
-      "id": "6b6dfce6-3240-414c-aeb1-91e9cd979974",
-      "agentId": "main",
-      "sessionKey": "agent:main:feishu:direct:ou_f590c429b7ded95568bebca2f534efdb",
-      "name": "TikTok Daily Scout",
-      "enabled": true,
-      "createdAtMs": 1774592236084,
-      "updatedAtMs": 1774893783940,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 2 * * *",
-        "tz": "Asia/Shanghai"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "run tiktok_scout",
-        "model": "openrouter/auto"
-      },
-      "delivery": {
-        "mode": "announce",
-        "to": "ou_f590c429b7ded95568bebca2f534efdb",
-        "channel": "feishu"
-      },
-      "state": {
-        "nextRunAtMs": 1774980000000,
-        "lastRunAtMs": 1774893600005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 183935,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    }
-  ]
+  "jobs": []
 }
