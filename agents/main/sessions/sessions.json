@@ -476,7 +476,7 @@
   },
   "agent:main:feishu:direct:ou_f590c429b7ded95568bebca2f534efdb": {
     "sessionId": "21c6caeb-c0d8-4ea6-afd4-373fff0aae31",
-    "updatedAt": 1775443280834,
+    "updatedAt": 1775449029895,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax:cn",
@@ -486,7 +486,8 @@
     "deliveryContext": {
       "channel": "feishu",
       "to": "user:ou_f590c429b7ded95568bebca2f534efdb",
-      "accountId": "kiit"
+      "accountId": "kiit",
+      "threadId": "omt_1ab6b920424fdc9e"
     },
     "lastChannel": "feishu",
     "lastTo": "user:ou_f590c429b7ded95568bebca2f534efdb",
@@ -498,7 +499,8 @@
       "chatType": "direct",
       "from": "feishu:ou_f590c429b7ded95568bebca2f534efdb",
       "to": "user:ou_f590c429b7ded95568bebca2f534efdb",
-      "accountId": "kiit"
+      "accountId": "kiit",
+      "threadId": "omt_1ab6b920424fdc9e"
     },
     "sessionFile": "/home/halei/.openclaw/agents/main/sessions/21c6caeb-c0d8-4ea6-afd4-373fff0aae31.jsonl",
     "compactionCount": 0,
@@ -1001,13 +1003,13 @@
       "version": 0
     },
     "status": "running",
-    "startedAt": 1775443280685,
+    "startedAt": 1775449029691,
     "modelProvider": "minimax",
     "model": "MiniMax-M2.7",
     "contextTokens": 204800,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775443163268,
+      "generatedAt": 1775448839553,
       "sessionId": "21c6caeb-c0d8-4ea6-afd4-373fff0aae31",
       "sessionKey": "agent:main:feishu:direct:ou_f590c429b7ded95568bebca2f534efdb",
       "provider": "minimax",
@@ -1305,13 +1307,14 @@
         ]
       }
     },
-    "inputTokens": 23895,
-    "outputTokens": 422,
-    "cacheRead": 12505,
-    "cacheWrite": 0,
-    "estimatedCostUsd": 0.09421098000000001,
-    "totalTokens": 24733,
-    "totalTokensFresh": true
+    "inputTokens": 39,
+    "outputTokens": 48,
+    "cacheRead": 53179,
+    "cacheWrite": 223,
+    "estimatedCostUsd": 0.8038584,
+    "totalTokens": 53441,
+    "totalTokensFresh": true,
+    "lastThreadId": "omt_1ab6b920424fdc9e"
   },
   "agent:main:openclaw-weixin:direct:o9cq8083vqotbnqsvgymrv19ahte@im.wechat": {
     "sessionId": "5e3b65c7-2bfe-40da-992f-e5c3236f9697",
