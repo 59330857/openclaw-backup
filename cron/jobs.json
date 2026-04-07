@@ -4,10 +4,10 @@
     {
       "id": "7d79be6c-d181-45c1-b57f-209a245c060e",
       "name": "openviking数据检查",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1775469103461,
-      "updatedAtMs": 1775469103461,
+      "updatedAtMs": 1775527260070,
       "schedule": {
         "kind": "at",
         "at": "2026-04-07T02:00:00.000Z"
@@ -25,7 +25,14 @@
         "accountId": "kiit"
       },
       "state": {
-        "nextRunAtMs": 1775527200000
+        "lastRunAtMs": 1775527200005,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 60065,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]

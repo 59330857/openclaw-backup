@@ -489,8 +489,8 @@
     "estimatedCostUsd": 0.009757365
   },
   "agent:main:feishu:direct:ou_f590c429b7ded95568bebca2f534efdb": {
-    "sessionId": "21c6caeb-c0d8-4ea6-afd4-373fff0aae31",
-    "updatedAt": 1775476847554,
+    "sessionId": "69382381-f3ca-4bb3-a73f-0b64876ce402",
+    "updatedAt": 1775533914936,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "minimax:cn",
@@ -500,26 +500,24 @@
     "deliveryContext": {
       "channel": "feishu",
       "to": "user:ou_f590c429b7ded95568bebca2f534efdb",
-      "accountId": "kiit",
-      "threadId": "omt_1ab6b920424fdc9e"
+      "accountId": "kiit"
     },
     "lastChannel": "feishu",
     "lastTo": "user:ou_f590c429b7ded95568bebca2f534efdb",
     "lastAccountId": "kiit",
     "origin": {
-      "label": "ou_f590c429b7ded95568bebca2f534efdb",
-      "provider": "feishu",
+      "label": "user:ou_f590c429b7ded95568bebca2f534efdb",
+      "provider": "heartbeat",
       "surface": "feishu",
       "chatType": "direct",
-      "from": "feishu:ou_f590c429b7ded95568bebca2f534efdb",
+      "from": "user:ou_f590c429b7ded95568bebca2f534efdb",
       "to": "user:ou_f590c429b7ded95568bebca2f534efdb",
-      "accountId": "kiit",
-      "threadId": "omt_1ab6b920424fdc9e"
+      "accountId": "kiit"
     },
-    "sessionFile": "/home/halei/.openclaw/agents/main/sessions/21c6caeb-c0d8-4ea6-afd4-373fff0aae31.jsonl",
+    "sessionFile": "/home/halei/.openclaw/agents/main/sessions/69382381-f3ca-4bb3-a73f-0b64876ce402.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawflow</name>\n    <description>Use when work should span one or more detached tasks but still behave like one job with a single owner context. ClawFlow is the runtime substrate under authoring layers like Lobster, acpx, or plain code. Keep conditional logic in the caller; use ClawFlow for flow identity, waiting, outputs, and user-facing emergence.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawflow-inbox-triage</name>\n    <description>Example ClawFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>~/.openclaw/workspace/skills/Summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openclaw-doctor</name>\n    <description>OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。</description>\n    <location>~/.openclaw/skills/openclaw-doctor/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vibesurf</name>\n    <description>Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.</description>\n    <location>~/.openclaw/skills/vibesurf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Agent Browser</name>\n    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>\n    <location>~/.openclaw/workspace/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>飞书多 Agent 配置助手</name>\n    <description>交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板</description>\n    <location>~/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>multi-search-engine</name>\n    <description>Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</description>\n    <location>~/.openclaw/workspace/skills/multi-search-engine/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-vetter</name>\n    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>\n    <location>~/.openclaw/workspace/skills/skill-vetter/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>\n    <location>~/.openclaw/workspace/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>~/.openclaw/workspace/skills/Summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openclaw-doctor</name>\n    <description>OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。</description>\n    <location>~/.openclaw/skills/openclaw-doctor/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vibesurf</name>\n    <description>Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.</description>\n    <location>~/.openclaw/skills/vibesurf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Agent Browser</name>\n    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>\n    <location>~/.openclaw/workspace/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>auto-updater</name>\n    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>\n    <location>~/.openclaw/workspace/skills/auto-updater/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>飞书多 Agent 配置助手</name>\n    <description>交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板</description>\n    <location>~/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>humanizer</name>\n    <description>Remove signs of AI-generated writing from text. Use when editing or reviewing\ntext to make it sound more natural and human-written. Based on Wikipedia&apos;s\ncomprehensive &quot;Signs of AI writing&quot; guide. Detects and fixes patterns including:\ninflated symbolism, promotional language, superficial -ing analyses, vague\nattributions, em dash overuse, rule of three, AI vocabulary words, negative\nparallelisms, and excessive conjunctive phrases.</description>\n    <location>~/.openclaw/workspace/skills/humanizer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>multi-search-engine</name>\n    <description>Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</description>\n    <location>~/.openclaw/workspace/skills/multi-search-engine/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily-search</name>\n    <description>Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.</description>\n    <location>~/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-vetter</name>\n    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>\n    <location>~/.openclaw/workspace/skills/skill-vetter/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "feishu-bitable"
@@ -549,12 +547,6 @@
           "name": "feishu-update-doc"
         },
         {
-          "name": "clawflow"
-        },
-        {
-          "name": "clawflow-inbox-triage"
-        },
-        {
           "name": "clawhub",
           "requiredEnv": []
         },
@@ -564,6 +556,11 @@
         },
         {
           "name": "gemini",
+          "requiredEnv": []
+        },
+        {
+          "name": "gh-issues",
+          "primaryEnv": "GH_TOKEN",
           "requiredEnv": []
         },
         {
@@ -582,8 +579,7 @@
           "name": "summarize"
         },
         {
-          "name": "weather",
-          "requiredEnv": []
+          "name": "weather"
         },
         {
           "name": "openclaw-doctor"
@@ -595,10 +591,23 @@
           "name": "Agent Browser"
         },
         {
+          "name": "auto-updater"
+        },
+        {
           "name": "飞书多 Agent 配置助手"
         },
         {
+          "name": "humanizer"
+        },
+        {
           "name": "multi-search-engine"
+        },
+        {
+          "name": "tavily-search"
+        },
+        {
+          "name": "polymarket",
+          "requiredEnv": []
         },
         {
           "name": "self-improvement"
@@ -744,36 +753,6 @@
           "disableModelInvocation": false
         },
         {
-          "name": "clawflow",
-          "description": "Use when work should span one or more detached tasks but still behave like one job with a single owner context. ClawFlow is the runtime substrate under authoring layers like Lobster, acpx, or plain code. Keep conditional logic in the caller; use ClawFlow for flow identity, waiting, outputs, and user-facing emergence.",
-          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow/SKILL.md",
-          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow",
-          "source": "openclaw-bundled",
-          "sourceInfo": {
-            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow/SKILL.md",
-            "source": "openclaw-bundled",
-            "scope": "project",
-            "origin": "top-level",
-            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow"
-          },
-          "disableModelInvocation": false
-        },
-        {
-          "name": "clawflow-inbox-triage",
-          "description": "Example ClawFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.",
-          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow-inbox-triage/SKILL.md",
-          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow-inbox-triage",
-          "source": "openclaw-bundled",
-          "sourceInfo": {
-            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow-inbox-triage/SKILL.md",
-            "source": "openclaw-bundled",
-            "scope": "project",
-            "origin": "top-level",
-            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawflow-inbox-triage"
-          },
-          "disableModelInvocation": false
-        },
-        {
           "name": "clawhub",
           "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
           "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
@@ -815,6 +794,21 @@
             "scope": "project",
             "origin": "top-level",
             "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gh-issues",
+          "description": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues"
           },
           "disableModelInvocation": false
         },
@@ -865,16 +859,16 @@
         },
         {
           "name": "skill-creator",
-          "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
+          "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/skill-creator/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/skill-creator",
+          "source": "openclaw-workspace",
           "sourceInfo": {
-            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-            "source": "openclaw-bundled",
+            "path": "/home/halei/.openclaw/workspace/skills/skill-creator/SKILL.md",
+            "source": "openclaw-workspace",
             "scope": "project",
             "origin": "top-level",
-            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/skill-creator"
+            "baseDir": "/home/halei/.openclaw/workspace/skills/skill-creator"
           },
           "disableModelInvocation": false
         },
@@ -895,16 +889,16 @@
         },
         {
           "name": "weather",
-          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/home/halei/.openclaw/workspace/skills/weather/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/weather",
+          "source": "openclaw-workspace",
           "sourceInfo": {
-            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-            "source": "openclaw-bundled",
+            "path": "/home/halei/.openclaw/workspace/skills/weather/SKILL.md",
+            "source": "openclaw-workspace",
             "scope": "project",
             "origin": "top-level",
-            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/weather"
+            "baseDir": "/home/halei/.openclaw/workspace/skills/weather"
           },
           "disableModelInvocation": false
         },
@@ -954,6 +948,21 @@
           "disableModelInvocation": false
         },
         {
+          "name": "auto-updater",
+          "description": "Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/auto-updater/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/auto-updater",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/auto-updater/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/auto-updater"
+          },
+          "disableModelInvocation": false
+        },
+        {
           "name": "飞书多 Agent 配置助手",
           "description": "交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板",
           "filePath": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md",
@@ -969,6 +978,21 @@
           "disableModelInvocation": false
         },
         {
+          "name": "humanizer",
+          "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing\ntext to make it sound more natural and human-written. Based on Wikipedia's\ncomprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including:\ninflated symbolism, promotional language, superficial -ing analyses, vague\nattributions, em dash overuse, rule of three, AI vocabulary words, negative\nparallelisms, and excessive conjunctive phrases.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/humanizer/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/humanizer",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/humanizer/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/humanizer"
+          },
+          "disableModelInvocation": false
+        },
+        {
           "name": "multi-search-engine",
           "description": "Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.",
           "filePath": "/home/halei/.openclaw/workspace/skills/multi-search-engine/SKILL.md",
@@ -980,6 +1004,21 @@
             "scope": "project",
             "origin": "top-level",
             "baseDir": "/home/halei/.openclaw/workspace/skills/multi-search-engine"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tavily-search",
+          "description": "Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search"
           },
           "disableModelInvocation": false
         },
@@ -1017,14 +1056,14 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775476830398,
+    "startedAt": 1775533909179,
     "modelProvider": "minimax",
     "model": "MiniMax-M2.7",
     "contextTokens": 204800,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775476828965,
-      "sessionId": "21c6caeb-c0d8-4ea6-afd4-373fff0aae31",
+      "generatedAt": 1775533908442,
+      "sessionId": "69382381-f3ca-4bb3-a73f-0b64876ce402",
       "sessionKey": "agent:main:feishu:direct:ou_f590c429b7ded95568bebca2f534efdb",
       "provider": "minimax",
       "model": "MiniMax-M2.7",
@@ -1043,9 +1082,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 33565,
+        "chars": 33872,
         "projectContextChars": 13099,
-        "nonProjectContextChars": 20466
+        "nonProjectContextChars": 20773
       },
       "injectedWorkspaceFiles": [
         {
@@ -1114,7 +1153,7 @@
         }
       ],
       "skills": {
-        "promptChars": 10878,
+        "promptChars": 11280,
         "entries": [
           {
             "name": "feishu-bitable",
@@ -1153,14 +1192,6 @@
             "blockChars": 225
           },
           {
-            "name": "clawflow",
-            "blockChars": 484
-          },
-          {
-            "name": "clawflow-inbox-triage",
-            "blockChars": 418
-          },
-          {
             "name": "clawhub",
             "blockChars": 432
           },
@@ -1171,6 +1202,10 @@
           {
             "name": "gemini",
             "blockChars": 221
+          },
+          {
+            "name": "gh-issues",
+            "blockChars": 508
           },
           {
             "name": "github",
@@ -1186,7 +1221,7 @@
           },
           {
             "name": "skill-creator",
-            "blockChars": 759
+            "blockChars": 389
           },
           {
             "name": "summarize",
@@ -1194,7 +1229,7 @@
           },
           {
             "name": "weather",
-            "blockChars": 416
+            "blockChars": 202
           },
           {
             "name": "openclaw-doctor",
@@ -1209,12 +1244,24 @@
             "blockChars": 322
           },
           {
+            "name": "auto-updater",
+            "blockChars": 325
+          },
+          {
             "name": "飞书多 Agent 配置助手",
             "blockChars": 206
           },
           {
+            "name": "humanizer",
+            "blockChars": 598
+          },
+          {
             "name": "multi-search-engine",
             "blockChars": 374
+          },
+          {
+            "name": "tavily-search",
+            "blockChars": 451
           },
           {
             "name": "self-improvement",
@@ -1329,16 +1376,15 @@
         ]
       }
     },
-    "inputTokens": 24411,
-    "outputTokens": 209,
-    "cacheRead": 12933,
-    "cacheWrite": 0,
-    "estimatedCostUsd": 1.304959575,
-    "totalTokens": 25183,
+    "inputTokens": 35,
+    "outputTokens": 57,
+    "cacheRead": 3533,
+    "cacheWrite": 16660,
+    "estimatedCostUsd": 0.033903405,
+    "totalTokens": 20228,
     "totalTokensFresh": true,
-    "lastThreadId": "omt_1ab6b920424fdc9e",
-    "endedAt": 1775476847432,
-    "runtimeMs": 17034
+    "endedAt": 1775533914841,
+    "runtimeMs": 5662
   },
   "agent:main:openclaw-weixin:direct:o9cq8083vqotbnqsvgymrv19ahte@im.wechat": {
     "sessionId": "5e3b65c7-2bfe-40da-992f-e5c3236f9697",
@@ -10706,5 +10752,1112 @@
     "totalTokensFresh": true,
     "cacheRead": 13184,
     "cacheWrite": 0
+  },
+  "agent:main:cron:7d79be6c-d181-45c1-b57f-209a245c060e": {
+    "sessionId": "941cc1e1-065c-4aee-ba5e-bd7758600d16",
+    "updatedAt": 1775527224190,
+    "systemSent": true,
+    "label": "Cron: openviking数据检查",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>\n    <location>~/.openclaw/workspace/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>~/.openclaw/workspace/skills/Summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openclaw-doctor</name>\n    <description>OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。</description>\n    <location>~/.openclaw/skills/openclaw-doctor/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vibesurf</name>\n    <description>Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.</description>\n    <location>~/.openclaw/skills/vibesurf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Agent Browser</name>\n    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>\n    <location>~/.openclaw/workspace/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>auto-updater</name>\n    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>\n    <location>~/.openclaw/workspace/skills/auto-updater/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>飞书多 Agent 配置助手</name>\n    <description>交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板</description>\n    <location>~/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>humanizer</name>\n    <description>Remove signs of AI-generated writing from text. Use when editing or reviewing\ntext to make it sound more natural and human-written. Based on Wikipedia&apos;s\ncomprehensive &quot;Signs of AI writing&quot; guide. Detects and fixes patterns including:\ninflated symbolism, promotional language, superficial -ing analyses, vague\nattributions, em dash overuse, rule of three, AI vocabulary words, negative\nparallelisms, and excessive conjunctive phrases.</description>\n    <location>~/.openclaw/workspace/skills/humanizer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>multi-search-engine</name>\n    <description>Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</description>\n    <location>~/.openclaw/workspace/skills/multi-search-engine/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily-search</name>\n    <description>Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.</description>\n    <location>~/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-vetter</name>\n    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>\n    <location>~/.openclaw/workspace/skills/skill-vetter/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "feishu-bitable"
+        },
+        {
+          "name": "feishu-calendar"
+        },
+        {
+          "name": "feishu-channel-rules"
+        },
+        {
+          "name": "feishu-create-doc"
+        },
+        {
+          "name": "feishu-fetch-doc"
+        },
+        {
+          "name": "feishu-im-read"
+        },
+        {
+          "name": "feishu-task"
+        },
+        {
+          "name": "feishu-troubleshoot"
+        },
+        {
+          "name": "feishu-update-doc"
+        },
+        {
+          "name": "clawhub",
+          "requiredEnv": []
+        },
+        {
+          "name": "coding-agent",
+          "requiredEnv": []
+        },
+        {
+          "name": "gemini",
+          "requiredEnv": []
+        },
+        {
+          "name": "gh-issues",
+          "primaryEnv": "GH_TOKEN",
+          "requiredEnv": []
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "summarize"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "openclaw-doctor"
+        },
+        {
+          "name": "vibesurf"
+        },
+        {
+          "name": "Agent Browser"
+        },
+        {
+          "name": "auto-updater"
+        },
+        {
+          "name": "飞书多 Agent 配置助手"
+        },
+        {
+          "name": "humanizer"
+        },
+        {
+          "name": "multi-search-engine"
+        },
+        {
+          "name": "tavily-search"
+        },
+        {
+          "name": "polymarket",
+          "requiredEnv": []
+        },
+        {
+          "name": "self-improvement"
+        },
+        {
+          "name": "skill-vetter"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "feishu-bitable",
+          "description": "飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到\"多维表格\"、\"bitable\"、\"数据表\"、\"记录\"、\"字段\"\n(5) 需要批量导入数据或批量更新多维表格",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-calendar",
+          "description": "飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-channel-rules",
+          "description": "Lark/Feishu channel output rules. Always active in Lark conversations.",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-create-doc",
+          "description": "创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-fetch-doc",
+          "description": "获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-im-read",
+          "description": "飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到\"聊天记录\"、\"消息\"、\"群里说了什么\"、\"话题回复\"、\"搜索消息\"、\"图片\"、\"文件下载\"\n(6) 需要按时间范围过滤消息、分页获取更多消息",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-task",
+          "description": "飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到\"任务\"、\"待办\"、\"to-do\"、\"清单\"、\"task\"\n(5) 需要设置任务负责人、关注人、截止时间",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-troubleshoot",
+          "description": "飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-update-doc",
+          "description": "更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gh-issues",
+          "description": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/github/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/github",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/github/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/github"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "node-connect",
+          "description": "Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/skill-creator/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/skill-creator",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/skill-creator/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/skill-creator"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "summarize",
+          "description": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).",
+          "filePath": "/home/halei/.openclaw/workspace/skills/Summarize/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/Summarize",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/Summarize/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/Summarize"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/home/halei/.openclaw/workspace/skills/weather/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/weather",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/weather/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/weather"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openclaw-doctor",
+          "description": "OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。",
+          "filePath": "/home/halei/.openclaw/skills/openclaw-doctor/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/skills/openclaw-doctor",
+          "source": "openclaw-managed",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/skills/openclaw-doctor/SKILL.md",
+            "source": "openclaw-managed",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/skills/openclaw-doctor"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "vibesurf",
+          "description": "Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.",
+          "filePath": "/home/halei/.openclaw/skills/vibesurf/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/skills/vibesurf",
+          "source": "openclaw-managed",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/skills/vibesurf/SKILL.md",
+            "source": "openclaw-managed",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/skills/vibesurf"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "Agent Browser",
+          "description": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/agent-browser/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/agent-browser",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/agent-browser/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/agent-browser"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "auto-updater",
+          "description": "Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/auto-updater/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/auto-updater",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/auto-updater/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/auto-updater"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "飞书多 Agent 配置助手",
+          "description": "交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板",
+          "filePath": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "humanizer",
+          "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing\ntext to make it sound more natural and human-written. Based on Wikipedia's\ncomprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including:\ninflated symbolism, promotional language, superficial -ing analyses, vague\nattributions, em dash overuse, rule of three, AI vocabulary words, negative\nparallelisms, and excessive conjunctive phrases.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/humanizer/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/humanizer",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/humanizer/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/humanizer"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "multi-search-engine",
+          "description": "Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/multi-search-engine/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/multi-search-engine",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/multi-search-engine/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/multi-search-engine"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tavily-search",
+          "description": "Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "self-improvement",
+          "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/self-improving-agent/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/self-improving-agent",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/self-improving-agent/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/self-improving-agent"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-vetter",
+          "description": "Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/skill-vetter/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/skill-vetter",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/skill-vetter/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/skill-vetter"
+          },
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openrouter",
+    "model": "openrouter/auto",
+    "authProfileOverride": "openrouter:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "status": "failed",
+    "startedAt": 1775527222557,
+    "abortedLastRun": false,
+    "endedAt": 1775527224144,
+    "runtimeMs": 1587
+  },
+  "agent:main:cron:7d79be6c-d181-45c1-b57f-209a245c060e:run:941cc1e1-065c-4aee-ba5e-bd7758600d16": {
+    "sessionId": "941cc1e1-065c-4aee-ba5e-bd7758600d16",
+    "updatedAt": 1775527260136,
+    "systemSent": true,
+    "label": "Cron: openviking数据检查",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>\n    <location>~/.openclaw/workspace/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>~/.openclaw/workspace/skills/Summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openclaw-doctor</name>\n    <description>OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。</description>\n    <location>~/.openclaw/skills/openclaw-doctor/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vibesurf</name>\n    <description>Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.</description>\n    <location>~/.openclaw/skills/vibesurf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Agent Browser</name>\n    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>\n    <location>~/.openclaw/workspace/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>auto-updater</name>\n    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>\n    <location>~/.openclaw/workspace/skills/auto-updater/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>飞书多 Agent 配置助手</name>\n    <description>交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板</description>\n    <location>~/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>humanizer</name>\n    <description>Remove signs of AI-generated writing from text. Use when editing or reviewing\ntext to make it sound more natural and human-written. Based on Wikipedia&apos;s\ncomprehensive &quot;Signs of AI writing&quot; guide. Detects and fixes patterns including:\ninflated symbolism, promotional language, superficial -ing analyses, vague\nattributions, em dash overuse, rule of three, AI vocabulary words, negative\nparallelisms, and excessive conjunctive phrases.</description>\n    <location>~/.openclaw/workspace/skills/humanizer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>multi-search-engine</name>\n    <description>Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</description>\n    <location>~/.openclaw/workspace/skills/multi-search-engine/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily-search</name>\n    <description>Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.</description>\n    <location>~/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-vetter</name>\n    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>\n    <location>~/.openclaw/workspace/skills/skill-vetter/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "feishu-bitable"
+        },
+        {
+          "name": "feishu-calendar"
+        },
+        {
+          "name": "feishu-channel-rules"
+        },
+        {
+          "name": "feishu-create-doc"
+        },
+        {
+          "name": "feishu-fetch-doc"
+        },
+        {
+          "name": "feishu-im-read"
+        },
+        {
+          "name": "feishu-task"
+        },
+        {
+          "name": "feishu-troubleshoot"
+        },
+        {
+          "name": "feishu-update-doc"
+        },
+        {
+          "name": "clawhub",
+          "requiredEnv": []
+        },
+        {
+          "name": "coding-agent",
+          "requiredEnv": []
+        },
+        {
+          "name": "gemini",
+          "requiredEnv": []
+        },
+        {
+          "name": "gh-issues",
+          "primaryEnv": "GH_TOKEN",
+          "requiredEnv": []
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "summarize"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "openclaw-doctor"
+        },
+        {
+          "name": "vibesurf"
+        },
+        {
+          "name": "Agent Browser"
+        },
+        {
+          "name": "auto-updater"
+        },
+        {
+          "name": "飞书多 Agent 配置助手"
+        },
+        {
+          "name": "humanizer"
+        },
+        {
+          "name": "multi-search-engine"
+        },
+        {
+          "name": "tavily-search"
+        },
+        {
+          "name": "polymarket",
+          "requiredEnv": []
+        },
+        {
+          "name": "self-improvement"
+        },
+        {
+          "name": "skill-vetter"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "feishu-bitable",
+          "description": "飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到\"多维表格\"、\"bitable\"、\"数据表\"、\"记录\"、\"字段\"\n(5) 需要批量导入数据或批量更新多维表格",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-bitable"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-calendar",
+          "description": "飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-calendar"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-channel-rules",
+          "description": "Lark/Feishu channel output rules. Always active in Lark conversations.",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-create-doc",
+          "description": "创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-fetch-doc",
+          "description": "获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-im-read",
+          "description": "飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到\"聊天记录\"、\"消息\"、\"群里说了什么\"、\"话题回复\"、\"搜索消息\"、\"图片\"、\"文件下载\"\n(6) 需要按时间范围过滤消息、分页获取更多消息",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-im-read"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-task",
+          "description": "飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到\"任务\"、\"待办\"、\"to-do\"、\"清单\"、\"task\"\n(5) 需要设置任务负责人、关注人、截止时间",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-task"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-troubleshoot",
+          "description": "飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-update-doc",
+          "description": "更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。",
+          "filePath": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc",
+          "source": "openclaw-extra",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md",
+            "source": "openclaw-extra",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/clawhub"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/coding-agent"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gemini",
+          "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gemini"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gh-issues",
+          "description": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/gh-issues"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/github/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/github",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/github/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/github"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/healthcheck"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "node-connect",
+          "description": "Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.",
+          "filePath": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md",
+          "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.npm-global/lib/node_modules/openclaw/skills/node-connect"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/skill-creator/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/skill-creator",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/skill-creator/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/skill-creator"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "summarize",
+          "description": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).",
+          "filePath": "/home/halei/.openclaw/workspace/skills/Summarize/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/Summarize",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/Summarize/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/Summarize"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/home/halei/.openclaw/workspace/skills/weather/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/weather",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/weather/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/weather"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openclaw-doctor",
+          "description": "OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。",
+          "filePath": "/home/halei/.openclaw/skills/openclaw-doctor/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/skills/openclaw-doctor",
+          "source": "openclaw-managed",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/skills/openclaw-doctor/SKILL.md",
+            "source": "openclaw-managed",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/skills/openclaw-doctor"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "vibesurf",
+          "description": "Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.",
+          "filePath": "/home/halei/.openclaw/skills/vibesurf/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/skills/vibesurf",
+          "source": "openclaw-managed",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/skills/vibesurf/SKILL.md",
+            "source": "openclaw-managed",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/skills/vibesurf"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "Agent Browser",
+          "description": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/agent-browser/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/agent-browser",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/agent-browser/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/agent-browser"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "auto-updater",
+          "description": "Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/auto-updater/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/auto-updater",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/auto-updater/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/auto-updater"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "飞书多 Agent 配置助手",
+          "description": "交互式引导配置多 Agent 系统，支持批量创建、凭证验证、角色模板",
+          "filePath": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/feishu-multi-agent-manager"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "humanizer",
+          "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing\ntext to make it sound more natural and human-written. Based on Wikipedia's\ncomprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including:\ninflated symbolism, promotional language, superficial -ing analyses, vague\nattributions, em dash overuse, rule of three, AI vocabulary words, negative\nparallelisms, and excessive conjunctive phrases.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/humanizer/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/humanizer",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/humanizer/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/humanizer"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "multi-search-engine",
+          "description": "Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/multi-search-engine/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/multi-search-engine",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/multi-search-engine/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/multi-search-engine"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tavily-search",
+          "description": "Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/openclaw-tavily-search"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "self-improvement",
+          "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/self-improving-agent/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/self-improving-agent",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/self-improving-agent/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/self-improving-agent"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-vetter",
+          "description": "Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.",
+          "filePath": "/home/halei/.openclaw/workspace/skills/skill-vetter/SKILL.md",
+          "baseDir": "/home/halei/.openclaw/workspace/skills/skill-vetter",
+          "source": "openclaw-workspace",
+          "sourceInfo": {
+            "path": "/home/halei/.openclaw/workspace/skills/skill-vetter/SKILL.md",
+            "source": "openclaw-workspace",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/home/halei/.openclaw/workspace/skills/skill-vetter"
+          },
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openrouter",
+    "model": "openrouter/auto",
+    "status": "done",
+    "startedAt": 1775527226518,
+    "abortedLastRun": false,
+    "endedAt": 1775527260081,
+    "runtimeMs": 33563
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1774832977122,
+  "updatedAt": 1775569628192,
   "providers": {
     "openrouter": [
       "[agents/model-providers] [xai-auth] bootstrap config fallback: no config-backed key found",
