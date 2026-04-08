@@ -6,7 +6,7 @@
     "产品筛选",
     "数据驱动选品"
   ],
-  "model": "openrouter/auto",
+  "model": "google-ai/gemini-2.0-flash",
   "runtime": "subagent",
   "spawnMode": "run",
   "workspaceDir": "/home/halei/.openclaw/workspace",
