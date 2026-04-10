@@ -9,3 +9,6 @@
 - HALEI，时间 Asia/Shanghai
 - 沟通风格：高效、直接
 - 飞书已授权，OpenID: ou_f590c429b7ded95568bebca2f534efdb
+
+## 学习计划
+- coding plan 套餐：晚上可用来学习编码

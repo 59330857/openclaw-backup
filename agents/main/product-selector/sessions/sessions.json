@@ -4,8 +4,8 @@
     "updatedAt": 1774613203993,
     "systemSent": true,
     "abortedLastRun": false,
-    "authProfileOverride": "openrouter:default",
-    "authProfileOverrideSource": "auto",
+    "authProfileOverride": "gemini:default",
+    "authProfileOverrideSource": "manual",
     "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {

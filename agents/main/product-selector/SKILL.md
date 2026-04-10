@@ -24,7 +24,7 @@
 Agent 将返回结构化选品报告与推荐清单。
 
 ## 配置
-- 模型：openrouter/auto
+- 模型：gemini/gemini-2.0-flash
 - 运行模式：subagent (run)
 - 超时：300秒
 - 持久化：completed后保留结果

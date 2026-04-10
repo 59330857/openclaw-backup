@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "profiles": {}
+  "profiles": {
+    "gemini:default": {
+      "provider": "gemini",
+      "model": "gemini-2.0-flash",
+      "apiKey": "AIzaSyDLi65k75qE_76nMM-i2aPhzHLUmKKZK7Y"
+    }
+  }
 }
