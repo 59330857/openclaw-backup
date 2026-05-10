@@ -1,0 +1,68 @@
+name: Daily Backup
+
+on:
+  schedule:
+    # Run at 03:00 UTC daily (11:00 AM Singapore/China time)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      skip_notify:
+        description: 'Skip notification'
+        required: false
+        default: 'false'
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .gitignore
+            agents
+            workspace
+            workspace-main
+            workspace-selector
+            skills
+            openviking
+            cron
+            flows
+            identity
+            canvas
+            tasks
+            devices
+            delivery-queue
+            openclaw-weixin
+            media
+            completions
+          sparse-checkout-cone-mode: false
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Sync from local machine
+        run: |
+          # rsync key directories from runner to checkout
+          # This step is for manual runs where we upload local state
+          echo "Backup triggered on: $(date)"
+          
+      - name: Detect changes
+        id: changed
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+
+      - name: Commit and push
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          git config user.name "OpenClaw Backup Bot"
+          git config user.email "backup@openclaw"
+          git add -A
+          git commit -m "Full backup $(date +%Y-%m-%d)"
+          git push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
