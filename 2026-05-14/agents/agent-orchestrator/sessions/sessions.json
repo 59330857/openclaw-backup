@@ -1,0 +1,455 @@
+{
+  "agent:agent-orchestrator:main": {
+    "sessionId": "ac9fdde2-b500-4a4c-aab2-e7c36289ae89",
+    "updatedAt": 1778664599185,
+    "sessionStartedAt": 1778660040582,
+    "lastInteractionAt": 1778664383485,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "authProfileOverride": "minimax:cn",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "chatType": "direct",
+    "deliveryContext": {
+      "channel": "feishu",
+      "to": "user:ou_d738ff68ba381582a3051f11b976c854",
+      "accountId": "agent-orchestrator"
+    },
+    "lastChannel": "feishu",
+    "lastTo": "user:ou_d738ff68ba381582a3051f11b976c854",
+    "lastAccountId": "agent-orchestrator",
+    "origin": {
+      "label": "ou_d738ff68ba381582a3051f11b976c854",
+      "provider": "feishu",
+      "surface": "feishu",
+      "chatType": "direct",
+      "from": "feishu:ou_d738ff68ba381582a3051f11b976c854",
+      "to": "user:ou_d738ff68ba381582a3051f11b976c854",
+      "accountId": "agent-orchestrator"
+    },
+    "sessionFile": "/home/halei/.openclaw/agents/agent-orchestrator/sessions/ac9fdde2-b500-4a4c-aab2-e7c36289ae89.jsonl",
+    "compactionCount": 0,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawswarm</name>\n    <description>Collaborative agent swarm for attempting extremely difficult, often unproven problems through hierarchical aggregation.</description>\n    <location>~/workspace-agent-orchestrator/skills/claw-swarm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>create-feishu-doc</name>\n    <description>Use this skill whenever the user wants to create, generate, write to, or organize content into a Feishu document. Triggers include: any mention of &apos;Feishu doc&apos;, &apos;Feishu document&apos;, &apos;飞书文档&apos;, &apos;创建飞书文档&apos;, &apos;生成飞书文档&apos;, or requests to produce structured or complete documents within Feishu. This applies to scenarios requiring fully formatted documents, including but not limited to: technical documentation, PRDs, project plans, reports, notes, articles, or novels. Use this skill whenever content needs to be compiled, structured, and delivered as a Feishu document.</description>\n    <location>~/workspace-agent-orchestrator/skills/create-feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openclaw-multi-agent-hq-builder</name>\n    <description>Build an OpenClaw multi-agent HQ system with a mother-bot plus sub-bots, including org design, role files, dispatcher, task state machine, blackboard protocol, and onboarding docs. Use this skill whenever the user wants to搭建多智能体组织、母bot/子bot体系、AI总部、调度系统、任务状态机、共享黑板、任务卡、或希望把一套多智能体工作流做成可安装、可复制、可教学的 OpenClaw skill/package.</description>\n    <location>~/workspace-agent-orchestrator/skills/openclaw-multi-agent-hq-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>orchestrator-v4</name>\n    <description>智能任务编排系统。自动扫描项目规模、规划子任务、动态派发多个 AI Worker 并行执行，支持大项目按模块拆分、自适应超时、滚动派发、用户随时打断改思路。\n触发条件：用户需要处理复杂任务、多步骤分析、代码生成、调试分析、研究调查或需要智能调度 AI Worker 时。</description>\n    <location>~/workspace-agent-orchestrator/skills/orchestrator-v4/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>swarm-control-feishu</name>\n    <description>一键配置飞书智能体集群，支持多 agent 并行、语音服务、全权限控制</description>\n    <location>~/workspace-agent-orchestrator/skills/swarm-control-feishu/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather, rain, temperature, and forecasts for locations or travel planning.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "clawhub",
+          "requiredEnv": []
+        },
+        {
+          "name": "clawswarm"
+        },
+        {
+          "name": "create-feishu-doc"
+        },
+        {
+          "name": "feishu-doc"
+        },
+        {
+          "name": "feishu-drive"
+        },
+        {
+          "name": "feishu-perm"
+        },
+        {
+          "name": "feishu-wiki"
+        },
+        {
+          "name": "github",
+          "requiredEnv": []
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "mcporter",
+          "requiredEnv": []
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "openclaw-multi-agent-hq-builder"
+        },
+        {
+          "name": "orchestrator-v4"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "swarm-control-feishu"
+        },
+        {
+          "name": "taskflow"
+        },
+        {
+          "name": "taskflow-inbox-triage"
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        }
+      ],
+      "version": 1778507753545
+    },
+    "status": "done",
+    "startedAt": 1778664387268,
+    "modelProvider": "minimax",
+    "model": "MiniMax-M2.7",
+    "contextTokens": 204000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1778664387049,
+      "sessionId": "ac9fdde2-b500-4a4c-aab2-e7c36289ae89",
+      "sessionKey": "agent:agent-orchestrator:main",
+      "provider": "minimax",
+      "model": "MiniMax-M2.7",
+      "workspaceDir": "/home/halei/workspace-agent-orchestrator",
+      "bootstrapMaxChars": 12000,
+      "bootstrapTotalMaxChars": 60000,
+      "bootstrapTruncation": {
+        "warningMode": "once",
+        "warningShown": false,
+        "truncatedFiles": 0,
+        "nearLimitFiles": 0,
+        "totalNearLimit": false
+      },
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 32421,
+        "projectContextChars": 13025,
+        "nonProjectContextChars": 19396
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/home/halei/workspace-agent-orchestrator/AGENTS.md",
+          "missing": false,
+          "rawChars": 7774,
+          "injectedChars": 7774,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/home/halei/workspace-agent-orchestrator/SOUL.md",
+          "missing": false,
+          "rawChars": 1797,
+          "injectedChars": 1797,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/home/halei/workspace-agent-orchestrator/TOOLS.md",
+          "missing": false,
+          "rawChars": 910,
+          "injectedChars": 910,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/home/halei/workspace-agent-orchestrator/IDENTITY.md",
+          "missing": false,
+          "rawChars": 693,
+          "injectedChars": 693,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/home/halei/workspace-agent-orchestrator/USER.md",
+          "missing": false,
+          "rawChars": 534,
+          "injectedChars": 534,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/home/halei/workspace-agent-orchestrator/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 225,
+          "injectedChars": 225,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/home/halei/workspace-agent-orchestrator/BOOTSTRAP.md",
+          "missing": true,
+          "rawChars": 0,
+          "injectedChars": 0,
+          "truncated": false
+        },
+        {
+          "name": "MEMORY.md",
+          "path": "/home/halei/workspace-agent-orchestrator/MEMORY.md",
+          "missing": false,
+          "rawChars": 767,
+          "injectedChars": 767,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 6293,
+        "entries": [
+          {
+            "name": "browser-automation",
+            "blockChars": 324
+          },
+          {
+            "name": "clawhub",
+            "blockChars": 253
+          },
+          {
+            "name": "clawswarm",
+            "blockChars": 279
+          },
+          {
+            "name": "create-feishu-doc",
+            "blockChars": 781
+          },
+          {
+            "name": "feishu-doc",
+            "blockChars": 255
+          },
+          {
+            "name": "feishu-drive",
+            "blockChars": 247
+          },
+          {
+            "name": "feishu-perm",
+            "blockChars": 269
+          },
+          {
+            "name": "feishu-wiki",
+            "blockChars": 249
+          },
+          {
+            "name": "github",
+            "blockChars": 253
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 280
+          },
+          {
+            "name": "mcporter",
+            "blockChars": 266
+          },
+          {
+            "name": "node-connect",
+            "blockChars": 281
+          },
+          {
+            "name": "openclaw-multi-agent-hq-builder",
+            "blockChars": 522
+          },
+          {
+            "name": "orchestrator-v4",
+            "blockChars": 306
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 266
+          },
+          {
+            "name": "swarm-control-feishu",
+            "blockChars": 216
+          },
+          {
+            "name": "taskflow",
+            "blockChars": 281
+          },
+          {
+            "name": "taskflow-inbox-triage",
+            "blockChars": 291
+          },
+          {
+            "name": "weather",
+            "blockChars": 251
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 0,
+        "schemaChars": 28283,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 304,
+            "propertiesCount": 3
+          },
+          {
+            "name": "edit",
+            "summaryChars": 326,
+            "schemaChars": 834,
+            "propertiesCount": 2
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 225,
+            "propertiesCount": 2
+          },
+          {
+            "name": "exec",
+            "summaryChars": 446,
+            "schemaChars": 1139,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 322,
+            "schemaChars": 1011,
+            "propertiesCount": 12
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "message",
+            "summaryChars": 310,
+            "schemaChars": 7195,
+            "propertiesCount": 109
+          },
+          {
+            "name": "tts",
+            "summaryChars": 305,
+            "schemaChars": 316,
+            "propertiesCount": 3
+          },
+          {
+            "name": "image_generate",
+            "summaryChars": 600,
+            "schemaChars": 2587,
+            "propertiesCount": 15
+          },
+          {
+            "name": "music_generate",
+            "summaryChars": 150,
+            "schemaChars": 1392,
+            "propertiesCount": 11
+          },
+          {
+            "name": "video_generate",
+            "summaryChars": 225,
+            "schemaChars": 3841,
+            "propertiesCount": 21
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 118,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "update_plan",
+            "summaryChars": 251,
+            "schemaChars": 574,
+            "propertiesCount": 2
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 225,
+            "schemaChars": 432,
+            "propertiesCount": 9
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 180,
+            "schemaChars": 161,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 314,
+            "schemaChars": 274,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 419,
+            "schemaChars": 1211,
+            "propertiesCount": 16
+          },
+          {
+            "name": "sessions_yield",
+            "summaryChars": 97,
+            "schemaChars": 60,
+            "propertiesCount": 1
+          },
+          {
+            "name": "subagents",
+            "summaryChars": 105,
+            "schemaChars": 191,
+            "propertiesCount": 4
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 456,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 83,
+            "schemaChars": 1209,
+            "propertiesCount": 12
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 374,
+            "propertiesCount": 3
+          },
+          {
+            "name": "image",
+            "summaryChars": 260,
+            "schemaChars": 342,
+            "propertiesCount": 6
+          },
+          {
+            "name": "pdf",
+            "summaryChars": 275,
+            "schemaChars": 400,
+            "propertiesCount": 6
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1537,
+            "schemaChars": 2976,
+            "propertiesCount": 52
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 605,
+            "schemaChars": 237,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 239,
+            "schemaChars": 215,
+            "propertiesCount": 4
+          }
+        ]
+      }
+    },
+    "inputTokens": 25793,
+    "outputTokens": 1963,
+    "cacheRead": 23808,
+    "cacheWrite": 0,
+    "totalTokens": 25798,
+    "totalTokensFresh": true,
+    "endedAt": 1778664598881,
+    "runtimeMs": 211613
+  }
+}
