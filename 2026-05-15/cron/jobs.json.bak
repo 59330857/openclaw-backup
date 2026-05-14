@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "2c9ba2b3-e380-4ca6-8f8d-f9dab9b920d9",
+      "name": "Memory Dreaming Promotion",
+      "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
+      "enabled": true,
+      "createdAtMs": 1776122115207,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "__openclaw_memory_core_short_term_promotion_dream__",
+        "lightContext": true
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "tts-config-reminder",
+      "name": "选品大师配置督促",
+      "description": "提醒 HALEI 完成 tts 选品大师配置",
+      "enabled": true,
+      "createdAtMs": 1746698400000,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-09T01:00:00.000Z"
+      },
+      "sessionTarget": "main",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🎯 选品大师配置提醒：你说要今天完成 tts 的所有配置让他能干活。别拖延！现在去检查：workspace-tts/ 的角色文件、飞书绑定、skills 加载情况。完成之前不要关掉这条消息。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {}
+    }
+  ]
+}
