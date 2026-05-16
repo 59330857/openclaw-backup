@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "jobs": {
+    "7d79be6c-d181-45c1-b57f-209a245c060e": {
+      "updatedAtMs": 1775527260070,
+      "state": {
+        "lastRunAtMs": 1775527200005,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 60065,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
+      }
+    },
+    "2c9ba2b3-e380-4ca6-8f8d-f9dab9b920d9": {
+      "updatedAtMs": 1777230000071,
+      "state": {
+        "nextRunAtMs": 1777316400000,
+        "lastRunAtMs": 1777230000026,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 45,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "lastError": "Cannot find module '/home/halei/.npm-global/lib/node_modules/openclaw/dist/heartbeat-runner.runtime-FDasT0YR.js' imported from /home/halei/.npm-global/lib/node_modules/openclaw/dist/heartbeat-runner-CRPuOpNx.js"
+      }
+    }
+  }
+}
