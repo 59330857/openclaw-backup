@@ -43,29 +43,6 @@
         "channel": "feishu"
       },
       "state": {}
-    },
-    {
-      "id": "6a3ece23-2e6a-493c-940c-0df4ca593a67",
-      "name": "capability-evolver-daily",
-      "enabled": true,
-      "createdAtMs": 1778850617256,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 9 * * *",
-        "tz": "Asia/Shanghai"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "你是 capability-evolver 的调度者。今天运行一次进化检查。\n\n执行：\n```\ncd ~/.openclaw/workspace/skills/capability-evolver && EVOLVE_STRATEGY=harden node index.js run 2>&1 | tail -20\n```\n\n检查输出：\n- 如果包含「HARD CAP BREACH」「155 files」或「给自己取个名字」，回复 HEARTBEAT_OK\n- 如果是 repair/innovate 结果（不是 failed），把摘要追加到 memory/evolution/evolution_narrative.md\n- 返回：基因名、outcome、信号数\n\n完成后简单报告结果。",
-        "model": "minimax/MiniMax-M2.7"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "feishu"
-      },
-      "state": {}
     }
   ]
 }

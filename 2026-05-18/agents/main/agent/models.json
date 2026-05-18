@@ -2,8 +2,8 @@
   "providers": {
     "minimax": {
       "baseUrl": "https://api.minimaxi.com/anthropic/v1",
+      "apiKey": "sk-cp-gtdRxxiZ_Qu_-9GM0xBF6UpeDvsYl8cPe4Y9mA-Xiy2GO8eBJSNPftqJdMb0Fl9OZAkY6sQR868fRUhTBV7OtwKyDfu-DzegI9-cDZERwbQGf3C5Wuvs38c",
       "api": "anthropic-messages",
-      "authHeader": true,
       "models": [
         {
           "id": "MiniMax-M2.7",
@@ -15,26 +15,7 @@
           ],
           "reasoning": true
         }
-      ],
-      "apiKey": "sk-cp-gtdRxxiZ_Qu_-9GM0xBF6UpeDvsYl8cPe4Y9mA-Xiy2GO8eBJSNPftqJdMb0Fl9OZAkY6sQR868fRUhTBV7OtwKyDfu-DzegI9-cDZERwbQGf3C5Wuvs38c"
-    },
-    "minimax-cn": {
-      "baseUrl": "https://api.minimaxi.com/anthropic/v1",
-      "api": "anthropic-messages",
-      "authHeader": true,
-      "models": [
-        {
-          "id": "MiniMax-M2.7",
-          "name": "MiniMax M2.7",
-          "contextWindow": 204000,
-          "input": [
-            "text",
-            "image"
-          ],
-          "reasoning": true
-        }
-      ],
-      "apiKey": "sk-cp-gtdRxxiZ_Qu_-9GM0xBF6UpeDvsYl8cPe4Y9mA-Xiy2GO8eBJSNPftqJdMb0Fl9OZAkY6sQR868fRUhTBV7OtwKyDfu-DzegI9-cDZERwbQGf3C5Wuvs38c"
+      ]
     }
   }
 }

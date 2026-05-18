@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "files": {
+    "ops:sessions/ops/51178456-6094-47b8-a65c-733fb87b14dc.jsonl": {
+      "mtimeMs": 1778420801031,
+      "size": 12476,
+      "contentHash": "8b7308449c7d3586e5f0b813e7cf9ade588e5fb2597c71da58e2864fc30eae08",
+      "lineCount": 8,
+      "lastContentLine": 8
+    }
+  },
+  "seenMessages": {
+    "ops:51178456-6094-47b8-a65c-733fb87b14dc": [
+      "a29e37c109d485492ffd2058993fe83adcabf5d1",
+      "b6b1bb5786868d10f6dcd33d9bd10915a69a8960",
+      "01793ce3d04280edd75df9db6cbe89a3b220e0e2",
+      "f7c67df7af42d4656ae866a9d4f510d639a3345e",
+      "3d39f3eaba043e947e9f6ef2a6581e40931211f6",
+      "9856d38b4b0fbc5abd10b76f412a47e68147c069",
+      "4a5dc4dcdbd1c259286e2a2027ec3fea5562c2ec",
+      "e29d621a2058d3529443221ab086f4c188f76bd0"
+    ]
+  }
+}

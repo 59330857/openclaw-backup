@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "files": {
+    "review:sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl": {
+      "mtimeMs": 1778420570366,
+      "size": 11531,
+      "contentHash": "8bc77ed1eb5cd47608254da7c8c8569a6d45ccd32c70093e7cf5ab5fab314ba1",
+      "lineCount": 7,
+      "lastContentLine": 7
+    }
+  },
+  "seenMessages": {
+    "review:2f368578-226d-40ee-9193-9d88ad934f16": [
+      "d53530adf46382c1b3e9044f67f99b2d18746e8a",
+      "85ed8a38caeb2202548e079a58a24879262a7feb",
+      "1fdf6059c828f22baa3d4ba213b511004f968af0",
+      "1ee21e19085eb0069db2513bec70c76ee86fc4c5",
+      "e54e13905431e4666492492dd912e305b98ed9da",
+      "73ca8bbcaf86fb4ca767e26bb2667c371b23d104",
+      "621ba576b92b9cd5e788c1f4428538081ced10a1"
+    ]
+  }
+}

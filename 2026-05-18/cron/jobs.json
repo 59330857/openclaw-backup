@@ -43,6 +43,31 @@
         "channel": "feishu"
       },
       "state": {}
+    },
+    {
+      "id": "5c75bbb4-b1c3-446b-bde9-74bed5a396c6",
+      "agentId": "tts",
+      "name": "TK选品每日9AM推送",
+      "description": "TK选品大师每日9AM自动选品推送",
+      "enabled": true,
+      "createdAtMs": 1779088195684,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行每日选品流程：1. 调用Sorftime API获取Amazon Hair Claws类目数据 2. 按SOP筛选评分 3. 将结果写入飞书多维表AKppbAeyXanToTsVl6ScxO5QnZd/tblHU2do30jzinJT 4. 发送选品报告给用户"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "tts"
+      },
+      "state": {}
     }
   ]
 }
