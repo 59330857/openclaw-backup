@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "files": {
+    "traffic:sessions/traffic/52841e05-dbe5-416f-8ec0-93ec017b22f8.jsonl.reset.2026-05-10T13-21-01.754Z": {
+      "mtimeMs": 1778419108653,
+      "size": 11101,
+      "contentHash": "c567ff1180795ce4907945c8e59fcb809f65533cc9fe83bdf4c6159421e96520",
+      "lineCount": 7,
+      "lastContentLine": 7
+    }
+  },
+  "seenMessages": {
+    "traffic:52841e05-dbe5-416f-8ec0-93ec017b22f8": [
+      "b824b29979a1a479170e798d602a4674c2c15720",
+      "a85b088e89f250c113c1b9ceabd7671dd50ba819",
+      "b4bb48e18b569e4a04b9002845706cca0d82fdd9",
+      "793b35e3585682b1f3e6e12465040fc71c8be685",
+      "21945b4b4a2f8f3ba2e75af4f169a726d3c294c1",
+      "1cead6cb63d4aead8742c6c4a2928f16bae0f414",
+      "19c1ce07c6f3a31fd9ea5a357e2e3e3d64a79078"
+    ]
+  }
+}
