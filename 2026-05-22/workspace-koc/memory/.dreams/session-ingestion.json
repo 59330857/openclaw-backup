@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "files": {
+    "koc:sessions/koc/19db9bc9-f026-4044-8c74-34f094e04311.jsonl": {
+      "mtimeMs": 1778421132041,
+      "size": 11187,
+      "contentHash": "c15e4fd7dc33a64246a8e8aae7e92267a8530c3f5d26d7052283d87cf63eaf97",
+      "lineCount": 6,
+      "lastContentLine": 6
+    }
+  },
+  "seenMessages": {
+    "koc:19db9bc9-f026-4044-8c74-34f094e04311": [
+      "230d8c07f0f442f6bb8508306d2d6d991e5af6f1",
+      "ebd01fee24e654971edda4d3f43abf16ac276af9",
+      "5b117e9630544c2514d54a6f18dc22b7450ad471",
+      "2994a180eea535557dcbebb6bbb4fa7a151b0f06",
+      "905f032732f68c9c368204c6bd3baaaeea8c4936",
+      "6f5cfdbdb24829952b49104c5a82633ccba0c295"
+    ]
+  }
+}
