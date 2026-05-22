@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "id": "demo_001",
+      "type": "选品",
+      "from": "director",
+      "to": [
+        "tts"
+      ],
+      "content": "整理本周跨境热销 TOP5 品类数据",
+      "status": "dispatched",
+      "created_at": "2026-05-13T19:00:00Z",
+      "deadline": "2026-05-14T10:00:00Z",
+      "dispatched_at": "2026-05-13T11:32:51.597Z"
+    },
+    {
+      "id": "demo_002",
+      "type": "内容",
+      "from": "director",
+      "to": [
+        "content"
+      ],
+      "content": "本周家居品类视频脚本 3 条",
+      "status": "dispatched",
+      "created_at": "2026-05-13T19:00:00Z",
+      "deadline": "2026-05-15T12:00:00Z",
+      "dispatched_at": "2026-05-13T11:32:51.598Z"
+    }
+  ],
+  "last_updated": "2026-05-13T11:32:51.598Z"
+}
