@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "files": {
+    "director:sessions/director/3a83cfae-3b0b-4f2b-bbb9-1d1d7494c4ff.jsonl": {
+      "mtimeMs": 1779541700706,
+      "size": 2199,
+      "contentHash": "67a17c7910359f2117755babf02e53fae680c621bade2581c2e4cd98b25cdfb8",
+      "lineCount": 2,
+      "lastContentLine": 2
+    },
+    "director:sessions/director/ccd67e77-d52f-43a9-97e8-b8f005aa63ba.jsonl.reset.2026-05-23T13-08-03.462Z": {
+      "mtimeMs": 1778660033275,
+      "size": 18030,
+      "contentHash": "ac7b490bc70a599f1cbd9829ff4d6c18f3e2c4751c9b399493b9f7f4b6d61957",
+      "lineCount": 9,
+      "lastContentLine": 9
+    },
+    "director:sessions/director/e07376bf-22c8-44bf-b463-300450df9a09.jsonl.reset.2026-05-13T07-55-45.829Z": {
+      "mtimeMs": 1778420689860,
+      "size": 17722,
+      "contentHash": "f8d727fb770a36109cc1c0d7693046e807cb4bbd5993ccd7f9b5523ac3596998",
+      "lineCount": 9,
+      "lastContentLine": 9
+    }
+  },
+  "seenMessages": {
+    "director:e07376bf-22c8-44bf-b463-300450df9a09": [
+      "3e799460cfeea208e8d06c62a6a5a61fdd1d8eae",
+      "72ee3fc09647596dbf582a39938be69a3ee9948d",
+      "81e3be06eef1b377bf823e670590986961cc679c",
+      "9b336af7a14ef559efe7fadeb5fd278828075e45",
+      "e180c22611fe589fd5f0944123ded58fba180b9f",
+      "b6b4df1344043e9048e81b0b29217477d7c3b8d0",
+      "8f2cb1613bbbb6d07d1223a9973468d07d54a466",
+      "76af35ea37a6a1eeb0cedee012bb8d9ce3ae638c",
+      "0c03c36c125738a1a78d856a394a2594bfc45f6d"
+    ],
+    "director:ccd67e77-d52f-43a9-97e8-b8f005aa63ba": [
+      "80477a7edea94f10cb23adfdca34ddf6b5b99c27",
+      "79f3fe3273d20d6b7276e0ca2c4a775181f0bdb4",
+      "2355dd878cc4baab7f248fc74dc400b65e87dcc8",
+      "a9028fc8829e6805a439e0e5deb64174ce55d756",
+      "cba000372da325325469e6f180f145fab720bece",
+      "26498aa0946b8cbbd49f573cfd751638fe7b6ec9",
+      "be78b2d07a7a53a63955f737312b162f944c5ee7",
+      "a78265bcb84293802da3597fd14ca1c4b40aa3d3",
+      "adb4287d3ce9765ee9261fc81d8c7c2898a1f41a"
+    ],
+    "director:3a83cfae-3b0b-4f2b-bbb9-1d1d7494c4ff": [
+      "4af6b53d2bbc95b00ee7bb3228d792d569bf156b"
+    ]
+  }
+}

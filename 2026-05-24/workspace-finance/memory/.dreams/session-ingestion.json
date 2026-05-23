@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "files": {
+    "finance:sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl.reset.2026-05-22T14-33-00.905Z": {
+      "mtimeMs": 1778504475758,
+      "size": 12714,
+      "contentHash": "58a34f0f545df62a2c179c113fb36c2a155b5ef92b8d583b0318c1ac5d0287e1",
+      "lineCount": 7,
+      "lastContentLine": 7
+    },
+    "finance:sessions/finance/b384050e-35c0-41d2-9505-59d1380f63a7.jsonl": {
+      "mtimeMs": 1779541689752,
+      "size": 2539,
+      "contentHash": "85959994b53f930a13fb9a4d57cda5648aeb9135c719a8935d7ddb2d2cf53fb6",
+      "lineCount": 2,
+      "lastContentLine": 2
+    },
+    "finance:sessions/finance/d8063b5a-1a7e-4129-8eec-ee406dc59799.jsonl.reset.2026-05-23T12-23-11.638Z": {
+      "mtimeMs": 1779460402234,
+      "size": 3807,
+      "contentHash": "dbf23f93c432fac47c832d5600f88e2456332162e897c0c567bd3eb631f3034c",
+      "lineCount": 2,
+      "lastContentLine": 2
+    }
+  },
+  "seenMessages": {
+    "finance:1aadef25-9551-4958-bf1a-1d71164a99d4": [
+      "3b9db7d08d7d63545dc410ab64e72f4dfc7e6450",
+      "afd010c30d5e1ce9ca8f799efb20ca7a2cd1a4d7",
+      "fc6b3d035bf6588ace16079def263081922a94ea",
+      "0846a8f5aae278c16a993f9dbee162a84822e439",
+      "a90936296e23bafc48f67eba9d3d03ae7bbb570f",
+      "d45e36372be85758778b9c308f61b27f14d45435",
+      "e2e0544f1065756341a8d6b842808e79b64d9b24"
+    ],
+    "finance:b384050e-35c0-41d2-9505-59d1380f63a7": [
+      "0a8c16e3ea6f6902b9c1170849adb38a8c2f22ff"
+    ],
+    "finance:d8063b5a-1a7e-4129-8eec-ee406dc59799": []
+  }
+}

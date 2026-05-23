@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "lastGood": {
+    "openrouter": "openrouter:default",
+    "minimax": "minimax:cn"
+  },
+  "usageStats": {
+    "openrouter:default": {
+      "lastUsed": 1774612852122,
+      "errorCount": 0
+    },
+    "minimax:cn": {
+      "lastUsed": 1779544732197,
+      "errorCount": 0,
+      "lastFailureAt": 1777000733809
+    }
+  }
+}
