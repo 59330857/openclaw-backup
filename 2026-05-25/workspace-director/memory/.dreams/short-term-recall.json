@@ -1,0 +1,868 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-24T19:00:29.598Z",
+  "entries": {
+    "memory:memory/2026-05-10.md:5:8": {
+      "key": "memory:memory/2026-05-10.md:5:8",
+      "path": "memory/2026-05-10.md",
+      "startLine": 5,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "今天发生的事: 我（舟🐟）正式上线; 老板首次对话，说以后用中文沟通; 帮我取了名字「舟」，定位是运营总监风格; 设定了基本沟通风格：沉稳、有谋略、言简意赅",
+      "recallCount": 0,
+      "dailyCount": 6,
+      "groundedCount": 0,
+      "totalScore": 3.72,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-17T19:00:15.207Z",
+      "queryHashes": [
+        "b86467cd03ca"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10",
+        "2026-05-14",
+        "2026-05-13",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "今天",
+        "发生",
+        "正式",
+        "上线",
+        "老板",
+        "首次",
+        "对话",
+        "以后"
+      ]
+    },
+    "memory:memory/2026-05-10.md:12:13": {
+      "key": "memory:memory/2026-05-10.md:12:13",
+      "path": "memory/2026-05-10.md",
+      "startLine": 12,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "待补充: 老板的具体背景和业务; 我负责的运营范围",
+      "recallCount": 0,
+      "dailyCount": 6,
+      "groundedCount": 0,
+      "totalScore": 3.72,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-17T19:00:15.207Z",
+      "queryHashes": [
+        "b86467cd03ca"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10",
+        "2026-05-14",
+        "2026-05-13",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "补充",
+        "老板",
+        "具体",
+        "背景",
+        "业务",
+        "负责",
+        "运营",
+        "范围"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3cfa343ca4c31d6f1eb640555] ou_8095cb7e32537c4c52f38d13cc0f28dd: hi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Hey! I'm not sure who I'm talking to — this is a pretty quiet intro. 😄 Who are you, and what can I help you with?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "hey",
+        "i'm",
+        "not",
+        "sure",
+        "who",
+        "talking",
+        "pretty",
+        "quiet"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3cf88848a0c49b1997aafa322] ou_8095cb7e32537c4c52f38d13cc0f28dd: 以后说中文",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id",
+        "以后",
+        "中文"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 好的，以后我们说中文！ 说起来，这是我第一次上线——我还没名字呢 😄 你是谁？怎么称呼你？我们可以聊聊，给我起个名字，定个风格什么的。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "好的",
+        "以后",
+        "我们",
+        "中文",
+        "说起来",
+        "第一次",
+        "上线",
+        "我还没"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3cf93868a0c2bb3c0d1b976f5] ou_8095cb7e32537c4c52f38d13cc0f28dd: 叫我老板， 给自己取一个 符合运营总监身份的名字",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id",
+        "老板",
+        "自己",
+        "一个",
+        "符合",
+        "运营",
+        "总监",
+        "身份"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 明白，老板！ 符合运营总监身份的名字，我想了几个： - **舟** — 运营如掌舵，方向明确，乘风破浪 - **程** — 运营就是推进每一\"程\"，简洁有力 - **谋** — 谋士的谋，有策略，不只是执行 - **凌** — 凌驾于流程之上，掌控全局 我个人最倾向 **「舟」** — 不管什么风浪，舵手就是你知道该往哪开。 你选哪个？或者有别的想法？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "明白",
+        "老板",
+        "符合",
+        "运营",
+        "总监",
+        "身份",
+        "名字",
+        "我想"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3cf5d000a4c3804151b0bde36] ou_8095cb7e32537c4c52f38d13cc0f28dd: nice 听你的",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id",
+        "nice",
+        "你的"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 好！那我就叫 **舟** 了。🐟 让我把信息记下来。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "就叫",
+        "我把",
+        "信息",
+        "记下来"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 搞定！身份设定完毕： - 我叫 **舟** 🐟，运营总监 - 叫我用中文交流 - 信息已存档，记忆已更新 以后有啥运营上的事，直接说，我来帮你推进。🚀",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:26.143Z",
+      "lastRecalledAt": "2026-05-10T19:00:26.143Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "搞定",
+        "身份",
+        "设定",
+        "完毕",
+        "运营",
+        "总监",
+        "中文",
+        "交流"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f76a6cd40a8c107831ca1f77c8] ou_8095cb7e32537c4c52f38d13cc0f28dd: 你可以使用searxng 这个skill没事",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "可以",
+        "使用",
+        "searxng",
+        "这个",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 收到，我已经注意到 searxng 这个工具。如果需要进行网络搜索，我会用的。需要我做什么吗？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "网络",
+        "收到",
+        "已经",
+        "注意到",
+        "searxng",
+        "这个",
+        "工具",
+        "如果"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f76a1e620bcc34e3e44153be57] ou_8095cb7e32537c4c52f38d13cc0f28dd: 作为我的电商团队总监，需要你整合一套可以执行的完整的打法，针对tiktokshop 东南亚的 打法。 我经营半年有点撑不住了。 如何能让你完整的了解到当前店铺的情况呢，",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "作为",
+        "我的",
+        "团队",
+        "总监",
+        "需要",
+        "整合",
+        "一套"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 明白，半年确实不容易。先说个判断——**能撑6个月，说明产品和供应链有一定基础，问题多半出在流量效率和运营节奏上**。 要给出有针对性的完整打法，我需要先了解你的真实情况。咱们分两步走： --- ## 第一步：你需要给我哪些信息？ **📊 核心数据（尽量给，越全越好）** | 维度 | 举例 | |------|------| | 销售额 | 近3个月GMV、月环比、客单价 | | 类目/品 | 在做什么类目？主要爆款是什么？ | | 站点 | 东南亚哪个国家？泰国/印尼/越南/马来/菲律宾？ | | 团队配置 | 有多少人？主播",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "类目/品",
+        "泰国/印尼/越南/马来/菲律宾",
+        "明白",
+        "半年",
+        "确实",
+        "容易",
+        "判断",
+        "说明"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f77692cb0e4c2d5688529b790f] ou_8095cb7e32537c4c52f38d13cc0f28dd: 哎，另外的话，我还得给你配置一些工具啊。嗯，当前的这个系统是乌班图二二是在桌面的上面也有浏览器，你可以用默认的C，DP去控制浏览器，单起一个独立的实力来去访问后台，我可以提供一个权限。那总之就是我们现在要尽快去跑通。那你知道现在咱们的团队有多少个角色吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "另外",
+        "的话",
+        "我还",
+        "配置",
+        "一些",
+        "工具",
+        "当前"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 我目前不知道咱们的团队有多少人、什么角色——这个信息你还没告诉我。 关于浏览器控制访问后台，这个思路很好。CDP (Chrome DevTools Protocol) 可以让我直接操控浏览器进入系统，效率会高很多。 **现在告诉我：** 1. 团队有多少人，各自什么角色？ 2. 给我开个账号权限，怎么连接？ 你要是愿意，直接给我开一个子账号+密码，我用浏览器帮你跑后台数据，比截图更快更完整。 **先把团队情况说一下？** 几个人、谁负责什么——我需要知道这张牌桌上有几张牌，才能帮你规划打法。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "目前",
+        "不知道",
+        "咱们",
+        "团队",
+        "多少",
+        "什么",
+        "角色",
+        "这个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f77649e0cb8c246b8deebdeecf] ou_8095cb7e32537c4c52f38d13cc0f28dd: 在系统创建的这些Agent当中，你们应我来想办法",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "系统",
+        "创建",
+        "这些",
+        "当中",
+        "你们",
+        "我来",
+        "办法"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 明白了，让我先看看当前系统里有哪些可用的Agent/角色。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "让我先看看当前系统里有哪些可用的agent/角色",
+        "明白",
+        "我先",
+        "看看",
+        "当前",
+        "系统",
+        "哪些",
+        "可用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-13.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-13.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-13.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 当前系统里只看到我（director）这一个Agent，没有其他专门的电商角色。 --- ## 我的建议：按角色分工 既然我们要跑通TikTok Shop东南亚，**不需要很多人，但需要几个专门的角色来配合我**： | 角色 | 负责什么 | 建议方案 | |------|---------|---------| | **我（director）** | 统筹决策、策略制定、数据分析、统筹协调 | 当前就是我 | | **运营操盘手** | 店铺后台操作、上下架、活动报名、数据监控 | 用我控制浏览器来做，或创建sub-agent |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-13T19:00:14.982Z",
+      "lastRecalledAt": "2026-05-13T19:00:14.982Z",
+      "queryHashes": [
+        "8c2b6c884df4"
+      ],
+      "recallDays": [
+        "2026-05-14",
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "或创建sub-agent",
+        "当前",
+        "系统",
+        "只看到",
+        "director",
+        "一个",
+        "没有",
+        "其他"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 收到！连接正常 ✅ 有什么需要帮忙的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:00:35.704Z",
+      "lastRecalledAt": "2026-05-23T19:00:35.704Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "收到",
+        "连接",
+        "正常",
+        "什么",
+        "需要",
+        "帮忙"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 收到～ 有事说事 😄",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "收到",
+        "有事"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: @TK 投流专家 @TK 内容专家 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 各位收到回复 [System: This message @mentions the following users: TK 投流专家 (open_id: ou_bff168787e074e5fa68bc47e05fb29f3), TK 内容专家 (open_id: ou_f164d44c90b82d5fce27117d4f4d59bf), TK 财务助手 (open_id: ou_1d98c9181e7adcf5219164c90ce",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "open-id",
+        "ou-1d98c9181e7adcf5219164c90ce",
+        "专家",
+        "内容",
+        "财务",
+        "助手",
+        "运营",
+        "大师"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 收到，运营总监在线 ✅",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "收到",
+        "运营",
+        "总监"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: @TK 投流专家 @TK 内容专家 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 以后都叫我老板 [System: This message @mentions the following users: TK 投流专家 (open_id: ou_bff168787e074e5fa68bc47e05fb29f3), TK 内容专家 (open_id: ou_f164d44c90b82d5fce27117d4f4d59bf), TK 财务助手 (open_id: ou_1d98c9181e7adcf5219164c90c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "open-id",
+        "ou-1d98c9181e7adcf5219164c90c",
+        "专家",
+        "内容",
+        "财务",
+        "助手",
+        "运营",
+        "大师"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 收到，老板 👌 已记录，以后都叫您老板",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "收到",
+        "老板",
+        "记录",
+        "以后"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: 你是哪个id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "你是",
+        "哪个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 我是 **director**（运营总监），你的东南亚 TikTok Shop 运营大脑 🧠📊 我的 agent ID 就是 `director`，当前会话通过飞书与你对话。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:29.169Z",
+      "lastRecalledAt": "2026-05-24T19:00:29.169Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "我是",
+        "director",
+        "运营",
+        "总监",
+        "你的",
+        "东南",
+        "tiktok",
+        "shop"
+      ]
+    }
+  }
+}

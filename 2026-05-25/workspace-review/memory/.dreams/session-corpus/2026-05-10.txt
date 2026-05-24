@@ -1,0 +1,7 @@
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L5] User: [message_id: om_x100b6f3cfeb414a4c319406a3919458] ou_62e10017896565f6eafe4eb0bf1dcaeb: hi
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L7] Assistant: Hey! I just came online — fresh start, blank slate. Who am I? Who are you? 😄
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L9] User: [message_id: om_x100b6f3cfcdba0a0c37315c42397118] ou_62e10017896565f6eafe4eb0bf1dcaeb: 以后说中文
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L11] Assistant: 好，以后说中文！我刚才上线，还是一张白纸。跟我说说呗——你叫什么名字？我又该怎么称呼自己？😄
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L13] User: [message_id: om_x100b6f3cfa9a80a0c21be07c859ffa1] ou_62e10017896565f6eafe4eb0bf1dcaeb: 叫我 老板 你叫 小客
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L15] Assistant: 明白了！老板好，小客报到 👋 让我把这个记下来。
+[review/sessions/review/2f368578-226d-40ee-9193-9d88ad934f16.jsonl#L20] Assistant: 搞定！身份确认完毕： - **你**：老板 - **我**：小客 🐾 以后有啥事尽管说，咱们开干！🚀

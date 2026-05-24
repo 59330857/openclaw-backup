@@ -1,0 +1,4 @@
+[traffic/sessions/traffic/6af28378-47fe-404a-b1d8-6657a7327e7d.jsonl#L5] User: @TK 运营总监 @TK 内容专家 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 各位收到回复 [System: This message @mentions the following users: TK 运营总监 (open_id: ou_4d352b3c1a1ad2a4b6b60cae1ae48cb1), TK 内容专家 (open_id: ou_be3118694dbd0a8d99d1f565761222c6), TK 财务助手 (open_id: ou_9f0df93717f876906f
+[traffic/sessions/traffic/6af28378-47fe-404a-b1d8-6657a7327e7d.jsonl#L7] Assistant: 收到！🚀 TK 投流专家在线，随时待命。有投流相关需求随时叫我。
+[traffic/sessions/traffic/6af28378-47fe-404a-b1d8-6657a7327e7d.jsonl#L8] User: @TK 运营总监 @TK 内容专家 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 以后都叫我老板 [System: This message @mentions the following users: TK 运营总监 (open_id: ou_4d352b3c1a1ad2a4b6b60cae1ae48cb1), TK 内容专家 (open_id: ou_be3118694dbd0a8d99d1f565761222c6), TK 财务助手 (open_id: ou_9f0df93717f876906
+[traffic/sessions/traffic/6af28378-47fe-404a-b1d8-6657a7327e7d.jsonl#L10] Assistant: 收到，老板！以后都叫您老板。🚀
