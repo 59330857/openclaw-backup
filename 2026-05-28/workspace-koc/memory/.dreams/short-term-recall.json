@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-23T19:00:35.499Z",
+  "entries": {
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3c8d0af0a0c26fde356fc11d9] ou_52d673411ba3540be62482b7831098cd: 以后说中文",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:11.098Z",
+      "lastRecalledAt": "2026-05-10T19:00:11.098Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id",
+        "以后",
+        "中文"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 好的，以后我说中文！有什么需要帮忙的尽管说～",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:11.098Z",
+      "lastRecalledAt": "2026-05-10T19:00:11.098Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "好的",
+        "以后",
+        "中文",
+        "什么",
+        "需要",
+        "帮忙",
+        "尽管"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3c88a7acacc4a7622aa4b6998] ou_52d673411ba3540be62482b7831098cd: 叫我老板 你叫什么自己取一个适合 达人运营身份的 名字",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:11.098Z",
+      "lastRecalledAt": "2026-05-10T19:00:11.098Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id",
+        "老板",
+        "什么",
+        "自己",
+        "一个",
+        "适合",
+        "运营",
+        "身份"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 收到，老板！ 给自己取个名字——**花火** 🌸 灵感：运营达人，就是帮他们在互联网上绽放花火的人。短促好记，有点锐度。 现在让我更新一下你的档案：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:11.098Z",
+      "lastRecalledAt": "2026-05-10T19:00:11.098Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "收到",
+        "老板",
+        "自己",
+        "名字",
+        "花火",
+        "灵感",
+        "运营",
+        "就是"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 老板好！我叫**花火** 🌸，以后就这么叫我了。 有什么需要我帮忙的，直接说～",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:11.098Z",
+      "lastRecalledAt": "2026-05-10T19:00:11.098Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "老板",
+        "花火",
+        "以后",
+        "这么",
+        "什么",
+        "需要",
+        "帮忙",
+        "直接"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b6f3c96c620a8c34fcb1804d75b4] ou_52d673411ba3540be62482b7831098cd: 好",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:11.098Z",
+      "lastRecalledAt": "2026-05-10T19:00:11.098Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "message-id"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: 我需要你每天能帮我邀约达人。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "需要",
+        "每天"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 明白，你想让我每天帮你邀约达人。在设置自动任务之前，我需要先确认几个关键信息： **必填信息：** 1. **目标平台** — TikTok Shop 达人，对吗？ 2. **目标国家** — 新加坡 / 马来西亚 / 泰国，还是全部？ 3. **产品品类** — 邀约什么品类？（如美妆、3C、家居等） 4. **每天邀约数量** — 大概多少人/天？ 5. **佣金结构** — 坑位费+佣金、纯佣金、还是待定？ 6. **达人来源** — 我们有自己的达人库（如飞书多维表格），还是需要我搜索？ **你只需要告诉我：** - 我去找",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "大概多少人/天",
+        "明白",
+        "你想",
+        "每天",
+        "设置",
+        "自动",
+        "任务",
+        "之前"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: 整你通过浏览器来操作达人邀约页面吧，",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "通过",
+        "浏览",
+        "操作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 好的，我来加载浏览器自动化技能，然后帮你操作达人邀约页面。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "好的",
+        "我来",
+        "浏览",
+        "自动",
+        "技能",
+        "然后",
+        "操作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 好的，通过浏览器来操作达人邀约页面。 **在开始之前，请告诉我：** 1. **达人邀约页面的网址是什么？** （例如 TikTok Shop Seller Center 的达人合作页面） 2. **每天大概邀约多少人？** 3. **这个流程大致是**：搜索达人 → 查看资料 → 发送合作邀约，对吗？ 有了网址，我可以先打开页面看看实际界面，然后为你设计每日自动邀约的流程。🔍",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "好的",
+        "通过",
+        "浏览",
+        "操作",
+        "开始",
+        "之前",
+        "告诉",
+        "网址"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: 这些信息我都回提供，我的意思必须通过控制浏览器来实现吧， agentbrowser这些功能无法完成操作吧",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "这些",
+        "信息",
+        "提供",
+        "我的",
+        "意思",
+        "必须",
+        "通过",
+        "控制"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 是的，**必须通过浏览器控制**来完成达人邀约操作——这不是 API 能搞定的事情。 你说的 `agent-browser` 就是我的浏览器自动化工具，完全可以做到： | 步骤 | 浏览器能做的 | |------|-------------| | 打开达人邀约页面 | ✅ 导航到指定URL | | 搜索/筛选达人 | ✅ 点击搜索框、填筛选条件 | | 查看达人资料 | ✅ 点击进入达人主页 | | 填写合作信息 | ✅ 填写表单字段 | | 发送邀约 | ✅ 点击发送按钮 | | 循环邀约下一个 | ✅ 重复以上流程 | **我",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "agent-browser",
+        "搜索/筛选达人",
+        "必须",
+        "通过",
+        "浏览",
+        "控制",
+        "完成",
+        "操作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: 不需要可视化浏览器，如cdp控制chrome实例？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "不需要",
+        "浏览",
+        "cdp",
+        "控制",
+        "chrome",
+        "实例"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 可以的，我的 `browser` 工具底层就是 **CDP (Chrome DevTools Protocol)** 驱动的，是**无头模式（headless）**，不弹窗口，完全符合你的要求。 **具体能力：** - ✅ 通过 CDP 控制 Chrome 实例 - ✅ 无头模式运行，不显示浏览器窗口 - ✅ 执行 JS、注入脚本、拦截请求 - ✅ 填表单、点按钮、截获网络请求 - ✅ 如果需要可视化检查，也可以随时截图 这比普通浏览器更可控，适合自动化批量操作。 **现在只需要你提供：** 1. **达人邀约页面网址**（URL）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "网络",
+        "可以",
+        "我的",
+        "browser",
+        "工具",
+        "底层",
+        "就是",
+        "cdp"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: 我想明确一下， 你驱动的是 cdp 控制的 chrome 独立实例，还是用的 agent browser这个skill 工具， 这是两个工具",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "我想",
+        "明确",
+        "一下",
+        "驱动",
+        "的是",
+        "cdp",
+        "控制",
+        "chrome"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-22.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 这是个很重要的澄清，我直接说清楚： --- **两个不同的东西：** | | `browser` 工具 | 直接 CDP 控制 | |---|---|---| | 底层技术 | Playwright（封装了 CDP） | 原生 Chrome DevTools Protocol | | 实例归属 | OpenClaw 托管的浏览器 | 我自己用 `exec` 拉起的独立 Chrome | | 控制方式 | 通过 `browser` 函数 | 通过 `exec` 发 CDP 命令到调试端口 | | 稳定性 | 高（OpenClaw 维护",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-22T19:00:22.150Z",
+      "lastRecalledAt": "2026-05-22T19:00:22.150Z",
+      "queryHashes": [
+        "91dce059e480"
+      ],
+      "recallDays": [
+        "2026-05-23",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "重要",
+        "澄清",
+        "直接",
+        "说清楚",
+        "不同",
+        "东西",
+        "browser",
+        "工具"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-23.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-23.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-23.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 测试收到！我是 TK 达人专家 🤝 有事你说。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-23T19:00:35.356Z",
+      "lastRecalledAt": "2026-05-23T19:00:35.356Z",
+      "queryHashes": [
+        "f61ede95966f"
+      ],
+      "recallDays": [
+        "2026-05-24",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "测试",
+        "收到",
+        "我是",
+        "专家",
+        "有事"
+      ]
+    }
+  }
+}

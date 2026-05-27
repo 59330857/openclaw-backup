@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "jobs": {
+    "2c9ba2b3-e380-4ca6-8f8d-f9dab9b920d9": {
+      "updatedAtMs": 1779908422892,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
+      "state": {
+        "nextRunAtMs": 1779994800000,
+        "lastRunAtMs": 1779908400007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22885,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0,
+        "lastFailureNotificationDeliveryStatus": "not-requested"
+      }
+    },
+    "tts-config-reminder": {
+      "updatedAtMs": 1778288400027,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":false,\"schedule\":{\"kind\":\"at\",\"at\":\"2026-05-09T01:00:00.000Z\"}}",
+      "state": {
+        "lastRunAtMs": 1778288400012,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 15,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0
+      }
+    },
+    "5c75bbb4-b1c3-446b-bde9-74bed5a396c6": {
+      "updatedAtMs": 1779848146024,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 9 * * *\",\"tz\":\"Asia/Shanghai\"}}",
+      "state": {
+        "nextRunAtMs": 1779930000000,
+        "lastRunAtMs": 1779848051046,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 94978,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0,
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "lastDiagnostics": {
+          "summary": "⚠️ ✉️ Message failed",
+          "entries": [
+            {
+              "ts": 1779848144804,
+              "source": "tool",
+              "severity": "warn",
+              "message": "⚠️ ✉️ Message failed"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "⚠️ ✉️ Message failed",
+        "lastDelivered": true
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+[director/sessions/director/6b437c88-b2d6-446e-bbdc-417b098e01c3.jsonl#L7] Assistant: 收到～ 有事说事 😄
+[director/sessions/director/6b437c88-b2d6-446e-bbdc-417b098e01c3.jsonl#L8] User: @TK 投流专家 @TK 内容专家 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 各位收到回复 [System: This message @mentions the following users: TK 投流专家 (open_id: ou_bff168787e074e5fa68bc47e05fb29f3), TK 内容专家 (open_id: ou_f164d44c90b82d5fce27117d4f4d59bf), TK 财务助手 (open_id: ou_1d98c9181e7adcf5
+[director/sessions/director/6b437c88-b2d6-446e-bbdc-417b098e01c3.jsonl#L10] Assistant: 收到，运营总监在线 ✅
+[director/sessions/director/6b437c88-b2d6-446e-bbdc-417b098e01c3.jsonl#L11] User: @TK 投流专家 @TK 内容专家 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 以后都叫我老板 [System: This message @mentions the following users: TK 投流专家 (open_id: ou_bff168787e074e5fa68bc47e05fb29f3), TK 内容专家 (open_id: ou_f164d44c90b82d5fce27117d4f4d59bf), TK 财务助手 (open_id: ou_1d98c9181e7adc
+[director/sessions/director/6b437c88-b2d6-446e-bbdc-417b098e01c3.jsonl#L13] Assistant: 收到，老板 👌 已记录，以后都叫您老板
+[director/sessions/director/bdee3b1e-315c-4c1e-93d4-cfc0dbd2db57.jsonl#L5] User: 你是哪个id
+[director/sessions/director/bdee3b1e-315c-4c1e-93d4-cfc0dbd2db57.jsonl#L6] Assistant: 我是 **director**（运营总监），你的东南亚 TikTok Shop 运营大脑 🧠📊 我的 agent ID 就是 `director`，当前会话通过飞书与你对话。
