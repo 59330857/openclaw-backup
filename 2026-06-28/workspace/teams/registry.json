@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "teams": {
+    "cross-border": {
+      "name": "跨境电商团队",
+      "agents": ["director", "tts", "content", "traffic", "ops", "koc", "finance", "review"],
+      "enabled": true
+    }
+  },
+  "defaultTeam": "cross-border"
+}

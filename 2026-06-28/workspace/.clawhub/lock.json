@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "context-engine": {
+      "version": "2.1.1",
+      "installedAt": 1781408316368
+    },
+    "self-improving-agent": {
+      "version": "3.0.24",
+      "installedAt": 1782417814511
+    }
+  }
+}
