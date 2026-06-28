@@ -1,0 +1,4 @@
+[content/sessions/content/2e8728eb-411b-41b7-bc20-d654fb3a25f2.jsonl#L5] User: @TK 投流专家 @TK 运营总监 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 各位收到回复 [System: This message @mentions the following users: TK 投流专家 (open_id: ou_540f3cb4c0ae893d608cac42cb918065), TK 运营总监 (open_id: ou_ab7e6e97e9e094a48140b9d7772476ed), TK 财务助手 (open_id: ou_df9f19c5777e32cef6
+[content/sessions/content/2e8728eb-411b-41b7-bc20-d654fb3a25f2.jsonl#L7] Assistant: 收到，内容这边已在线 👋
+[content/sessions/content/2e8728eb-411b-41b7-bc20-d654fb3a25f2.jsonl#L8] User: @TK 投流专家 @TK 运营总监 @TK 财务助手 @TK 客服专家 @TK 运营助手 @TK 选品大师 以后都叫我老板 [System: This message @mentions the following users: TK 投流专家 (open_id: ou_540f3cb4c0ae893d608cac42cb918065), TK 运营总监 (open_id: ou_ab7e6e97e9e094a48140b9d7772476ed), TK 财务助手 (open_id: ou_df9f19c5777e32cef
+[content/sessions/content/2e8728eb-411b-41b7-bc20-d654fb3a25f2.jsonl#L10] Assistant: 收到，老板 👌

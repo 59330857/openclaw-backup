@@ -1,0 +1,124 @@
+
+
+The following skills provide specialized instructions for specific tasks.
+Use the read tool to load a skill's file when the task matches its description.
+When a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.
+
+<available_skills>
+  <skill>
+    <name>Agent Browser</name>
+    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>
+    <location>~/.openclaw/skills/agent-browser/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>auto-updater</name>
+    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>
+    <location>~/.openclaw/skills/auto-updater/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>browser-automation</name>
+    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>
+    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>clawhub</name>
+    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>clawswarm</name>
+    <description>Collaborative agent swarm for attempting extremely difficult, often unproven problems through hierarchical aggregation.</description>
+    <location>~/workspace-agent-orchestrator/skills/claw-swarm/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>create-feishu-doc</name>
+    <description>Use this skill whenever the user wants to create, generate, write to, or organize content into a Feishu document. Triggers include: any mention of &apos;Feishu doc&apos;, &apos;Feishu document&apos;, &apos;飞书文档&apos;, &apos;创建飞书文档&apos;, &apos;生成飞书文档&apos;, or requests to produce structured or complete documents within Feishu. This applies to scenarios requiring fully formatted documents, including but not limited to: technical documentation, PRDs, project plans, reports, notes, articles, or novels. Use this skill whenever content needs to be compiled, structured, and delivered as a Feishu document.</description>
+    <location>~/workspace-agent-orchestrator/skills/create-feishu-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-doc</name>
+    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-drive</name>
+    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>
+    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-perm</name>
+    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>
+    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-wiki</name>
+    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>find-skills</name>
+    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>
+    <location>~/.openclaw/skills/find-skills/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>github</name>
+    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/github/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>healthcheck</name>
+    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>lossless-claw</name>
+    <description>Configure, diagnose, and use lossless-claw effectively in OpenClaw, with emphasis on key settings, summary health, and recall-tool usage.</description>
+    <location>~/.openclaw/plugin-skills/lossless-claw/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>mcporter</name>
+    <description>List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>node-connect</name>
+    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>openclaw-multi-agent-hq-builder</name>
+    <description>Build an OpenClaw multi-agent HQ system with a mother-bot plus sub-bots, including org design, role files, dispatcher, task state machine, blackboard protocol, and onboarding docs. Use this skill whenever the user wants to搭建多智能体组织、母bot/子bot体系、AI总部、调度系统、任务状态机、共享黑板、任务卡、或希望把一套多智能体工作流做成可安装、可复制、可教学的 OpenClaw skill/package.</description>
+    <location>~/workspace-agent-orchestrator/skills/openclaw-multi-agent-hq-builder/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>orchestrator-v4</name>
+    <description>智能任务编排系统。自动扫描项目规模、规划子任务、动态派发多个 AI Worker 并行执行，支持大项目按模块拆分、自适应超时、滚动派发、用户随时打断改思路。
+触发条件：用户需要处理复杂任务、多步骤分析、代码生成、调试分析、研究调查或需要智能调度 AI Worker 时。</description>
+    <location>~/workspace-agent-orchestrator/skills/orchestrator-v4/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>skill-creator</name>
+    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>swarm-control-feishu</name>
+    <description>一键配置飞书智能体集群，支持多 agent 并行、语音服务、全权限控制</description>
+    <location>~/workspace-agent-orchestrator/skills/swarm-control-feishu/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>taskflow</name>
+    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>taskflow-inbox-triage</name>
+    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>weather</name>
+    <description>Get current weather, rain, temperature, and forecasts for locations or travel planning.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>
+  </skill>
+</available_skills>
