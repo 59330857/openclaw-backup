@@ -1,0 +1,32 @@
+{
+  "generatedBy": "openclaw-plugin-model-catalog-v1",
+  "providers": {
+    "minimax": {
+      "baseUrl": "https://api.minimaxi.com/anthropic/v1",
+      "models": [
+        {
+          "id": "MiniMax-M2.7",
+          "name": "MiniMax M2.7",
+          "contextWindow": 204000,
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "maxTokens": 8192
+        },
+        {
+          "id": "MiniMax-M2.7-highspeed",
+          "input": [
+            "text",
+            "image"
+          ],
+          "name": "MiniMax-M2.7-highspeed"
+        }
+      ],
+      "api": "anthropic-messages",
+      "authHeader": true,
+      "apiKey": "sk-cp-gtdRxxiZ_Qu_-9GM0xBF6UpeDvsYl8cPe4Y9mA-Xiy2GO8eBJSNPftqJdMb0Fl9OZAkY6sQR868fRUhTBV7OtwKyDfu-DzegI9-cDZERwbQGf3C5Wuvs38c"
+    }
+  }
+}

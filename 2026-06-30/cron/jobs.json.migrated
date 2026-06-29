@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "2c9ba2b3-e380-4ca6-8f8d-f9dab9b920d9",
+      "name": "Memory Dreaming Promotion",
+      "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
+      "enabled": true,
+      "createdAtMs": 1776122115207,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "__openclaw_memory_core_short_term_promotion_dream__",
+        "lightContext": true
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "tts-config-reminder",
+      "name": "选品大师配置督促",
+      "description": "提醒 HALEI 完成 tts 选品大师配置",
+      "enabled": false,
+      "createdAtMs": 1746698400000,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-09T01:00:00.000Z"
+      },
+      "sessionTarget": "main",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🎯 选品大师配置提醒：你说要今天完成 tts 的所有配置让他能干活。别拖延！现在去检查：workspace-tts/ 的角色文件、飞书绑定、skills 加载情况。完成之前不要关掉这条消息。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {}
+    },
+    {
+      "id": "5c75bbb4-b1c3-446b-bde9-74bed5a396c6",
+      "agentId": "tts",
+      "name": "TK选品-越泰黑马拦截-v6.0",
+      "description": "越泰市场趋势黑马拦截策略v6.0：每3小时执行阶段1（白天9-21点），S级爆款触发全流程，直接写入飞书多维表格",
+      "enabled": true,
+      "createdAtMs": 1779088195684,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9,12,15,18,21 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行v6.0选品流程（越泰市场趋势黑马拦截）：\n1. 调用tiktok_product_trend扫描越南+泰国发饰品类，筛选24小时销量环比≥100%、带货视频≥8个、星级≥4.2、客单价.5-的商品（限30品）\n2. 发现S级爆款（12小时销量翻倍+视频≥15个+星级≥4.3）立即触发阶段2+3完整验证\n3. 通过的商品调用ali1688_similar_product核算采购价和毛利率（目标≥40%）\n4. 将结果写入飞书多维表格AKppbAeyXanToTsVl6ScxO5QnZd/tblHU2do30jzinJT，包含：标题、主图、TikTok销量、Shopee验证数据、1688采购价、毛利率、推荐等级（S/A/B级）\n5. 发送选品报告到飞书"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "tts"
+      },
+      "state": {}
+    },
+    {
+      "id": "033adb0b-f08b-47e9-a0f6-a71bfe729a9d",
+      "agentId": "main",
+      "sessionKey": "agent:main:feishu:kiit:direct:ou_f590c429b7ded95568bebca2f534efdb",
+      "name": "每日 skill 升级检查",
+      "description": "每天凌晨 4 点（Asia/Shanghai）跑一次 clawhub update --all，把升级结果 announce 到飞书",
+      "enabled": true,
+      "createdAtMs": 1780455371363,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行每日 skill 升级检查。\n\n1. 运行 `clawhub list` 查看当前已装的 skill\n2. 运行 `clawhub update --all --no-input --force` 升级所有 skill\n3. 如果有 skill 升级失败，记下错误信息\n4. 汇报格式：\n   - 检查时间（Asia/Shanghai）\n   - 升级成功的 skill（列出版本号变化）\n   - 升级失败的 skill（列出错误）\n   - 已是最新、没动的 skill（仅列数量）\n5. 如果所有 skill 都已是最新，回复一句话即可，不要冗长\n\n注意：\n- 不要主动修改配置文件\n- 任何破坏性操作前先 stop 并汇报"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "user:ou_f590c429b7ded95568bebca2f534efdb"
+      },
+      "state": {}
+    }
+  ]
+}

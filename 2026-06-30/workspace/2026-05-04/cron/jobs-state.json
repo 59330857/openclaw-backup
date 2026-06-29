@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "jobs": {
+    "7d79be6c-d181-45c1-b57f-209a245c060e": {
+      "updatedAtMs": 1775527260070,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":false,\"schedule\":{\"kind\":\"at\",\"at\":\"2026-04-07T02:00:00.000Z\"}}",
+      "state": {
+        "lastRunAtMs": 1775527200005,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 60065,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
+      }
+    },
+    "2c9ba2b3-e380-4ca6-8f8d-f9dab9b920d9": {
+      "updatedAtMs": 1777748415475,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
+      "state": {
+        "nextRunAtMs": 1777834800000,
+        "lastRunAtMs": 1777748400028,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 15447,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0
+      }
+    }
+  }
+}
