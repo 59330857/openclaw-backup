@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sorftime-mcp": {
+      "baseUrl": "https://mcp.sorftime.com/",
+      "headers": {
+        "Authorization": "Bearer rhblyi90suxqqwfnnwzwy2tdvuhwqt09",
+        "accept": "application/json, text/event-stream"
+      }
+    }
+  }
+}

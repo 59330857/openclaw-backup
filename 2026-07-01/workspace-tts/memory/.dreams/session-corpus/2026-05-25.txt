@@ -1,0 +1,4 @@
+[tts/sessions/tts/6384c765-6ef5-4a32-916d-f361579b6b2f.jsonl#L5] User: 这意思是推送失败了，还是选品失败了
+[tts/sessions/tts/6384c765-6ef5-4a32-916d-f361579b6b2f.jsonl#L6] Assistant: 是**推送失败**，但原因不是选品逻辑的问题——是 AI 服务（LLM API）临时过载了。 简单说就是：cron 任务按时触发了，但在执行过程中调用 AI 接口时被告知"服务器忙，稍后再试"，所以整个任务失败了。这不是选品数据或 SOP 逻辑的问题，就是调用 OpenAI/Minimax 这类 AI 服务时遇到的暂时性负载问题。 一般来说重跑一次大概率就过了。
+[tts/sessions/tts/6384c765-6ef5-4a32-916d-f361579b6b2f.jsonl#L13] Assistant: 已触发，任务在后台跑，有结果了会推送过来。
+[tts/sessions/tts/d9110ff8-3686-4e79-819a-0e47d66bb546.jsonl#L6] Assistant: 我来执行这个每日选品流程。首先探索一下工作空间，找到相关配置和SOP。
