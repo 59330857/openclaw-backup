@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "lastGood": {
+    "openrouter": "openrouter:default",
+    "minimax": "minimax:cn"
+  },
+  "usageStats": {
+    "openrouter:default": {
+      "lastUsed": 1774612852122,
+      "errorCount": 0
+    },
+    "minimax:cn": {
+      "lastUsed": 1781294630917,
+      "cooldownUntil": 1781611826931,
+      "cooldownReason": "timeout",
+      "cooldownModel": "MiniMax-M2.7",
+      "errorCount": 1,
+      "failureCounts": {
+        "timeout": 1
+      },
+      "lastFailureAt": 1781611796931
+    }
+  }
+}

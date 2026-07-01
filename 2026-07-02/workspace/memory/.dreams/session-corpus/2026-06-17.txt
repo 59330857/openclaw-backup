@@ -1,0 +1,8 @@
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L5] User: [message_id: om_x100b6c1450dd0ca8c1b2eeb547c4ced] ou_f590c429b7ded95568bebca2f534efdb: 通信测试
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L6] Assistant: 收到，通信正常 ✅ 我是 KIIT（大总管），随时待命。有什么需要调度的，直接说。
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L8] Assistant: 收到 ✅
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L10] Assistant: 收到 ✅
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L12] Assistant: 收到 ✅
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L14] Assistant: 收到 ✅
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L16] Assistant: 收到 ✅
+[main/sessions/main/c29ad1ce-2e72-4d85-96f8-930ed1300f27.jsonl#L18] Assistant: 收到 ✅
