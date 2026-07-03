@@ -1,0 +1,6 @@
+2026/04/10-15:31:47.887 da9ab Creating DB /home/halei/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_seller.tiktokshopglobalselling.com_0.indexeddb.leveldb since it was missing.
+2026/04/10-15:31:47.922 da9ab Reusing MANIFEST /home/halei/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_seller.tiktokshopglobalselling.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/10-15:31:52.283 da9aa Level-0 table #5: started
+2026/04/10-15:31:52.301 da9aa Level-0 table #5: 1434 bytes OK
+2026/04/10-15:31:52.315 da9aa Delete type=0 #3
+2026/04/10-15:31:52.315 da9aa Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
