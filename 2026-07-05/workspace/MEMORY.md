@@ -1,0 +1,150 @@
+# MEMORY.md - 长期记忆
+
+每次醒来都会读这个文件。惜字如金，只留真正重要的。
+
+## 记忆系统架构
+- **memory-core**（OpenClaw 2026.5.20 内置核心，enabled）— 短时 dreaming + 文件级记忆
+- 可选后端：**@openclaw/memory-lancedb**（官方插件，未装；minHostVersion >=2026.4.10；LanceDB 向量库 + auto-recall/capture；darwin-x64 不支持）
+- **MEMORY.md + daily.md**（长期文件记忆）
+- **.dreams/** — dreaming 语料存储
+- 备注：早期记忆里"sqlite-vec"那条是过时的，2026.5.20 的 memory-core 实际不用 sqlite-vec
+- **复查触发条件**（任一满足再考虑装 lancedb）：①Agent 数量 ≥ 5；②`memory/` 累计文件 > 100 个或单文件 > 50KB；③出现召回不准/想不起以前聊过啥的反馈；④LCM recall 链路成为瓶颈
+
+## 全局插件/工具配置
+- **SearXNG web_search**（2026-06-09 由 agent-orchestrator 配置并验证）
+  - 插件：`@agentclaws/openclaw-searxng`
+  - 配置：`plugins.entries.searxng.config.webSearch.baseUrl = http://127.0.0.1:8888`
+  - 已加入 `plugins.allow`
+  - 范围：全局生效，10 个 agent 共享同一 gateway config 都可用
+  - 验证：`web_search` 返回带 "功能来自 searxng" 标识，约 7.8s
+  - 注：未来全局插件/工具变更也记到这里
+
+## Agent 花名册（HALEI 6/13 确认）
+
+> 以后所有 agent / 飞书机器人都用中文名，agent_id 在内部通信用。
+
+| agent_id | 名字 | 飞书 bot | IDENTITY emoji |
+|----------|------|----------|----------------|
+| main | KIIT（大总管） | kiit | 🪶 |
+| agent-orchestrator | Agent 编排工程师 | —（无对外 bot） | 🔧 |
+| tts | TK 选品大师 | tts | — |
+| content | TK 内容专家 | content | 🎬 |
+| koc | TK 达人运营 | koc | 🤝 |
+| traffic | TK 投流专家 | traffic | 🚀 |
+| ops | TK 运营助手 | ops | ✅ |
+| director | TK 运营总监 | director | 📊 |
+| finance | TK 财务助手 | finance | 💰 |
+| review | TK 客服专家 | review | 💬 |
+
+**口头称呼习惯**：
+- 我自称 KIIT / 大总管
+- agent-orchestrator → Agent 编排工程师
+- 其他 8 个直接叫"TK 选品大师""TK 投流专家"等中文名，不说 agent_id
+
+## 用户信息
+- HALEI，时间 Asia/Shanghai
+- 沟通风格：高效、直接
+- 飞书已授权，OpenID: ou_f590c429b7ded95568bebca2f534efdb
+
+## 已卸载/禁用的功能
+- Capability Evolver — 已卸载，不再使用
+
+## 学习计划
+- coding plan 套餐：晚上可用来学习探索更多的技能帮助用户提高生产力
+
+## 索引
+
+> `memory/` 下的文件索引。新建文件时在此添加条目。需要详情时再读取对应文件。
+
+- YYYY-MM-DD.md: 每日日志
+- learnings/：自我改进日志
+  - LEARNINGS.md: 教训和发现（纠正、知识盲区、最佳实践）
+  - ERRORS.md: 操作失败和异常记录
+  - FEATURE_REQUESTS.md: 用户请求的缺失能力
+
+## Agent 架构
+
+10 个 Agent + 大总管（详细表格见 SOUL.md 团队协作）：
+
+- main (KIIT) — 大总管，**只做业务任务调度**；不直接改 agent 设置
+- agent-orchestrator — **Agent 编排工程师**，管所有 agent 的 config/SOUL/MEMORY/cron/workspace/models/auth
+- 8 个执行 Agent：tts / content / koc / traffic / ops / director / finance / review
+- 铁规则：调整 agent 设置 → agent-orchestrator；业务任务 → main 调度 → 分发给执行 Agent
+- 边界：main 可以读 agent 状态做诊断，但**修改动作交 agent-orchestrator**
+
+## 编排模式
+
+（验证过的有效协作模式。）
+
+## 记忆
+
+> 沉淀过的认知。决策、教训、重要偏好、关键上下文。memory/ 是笔记，这里是定稿。
+
+## 指挥/通知优先级规则
+- 当你让我「通知、指挥、调度」某个 Agent 时，**优先使用 `sessions_send` 内部通信**，不走飞书外部消息
+- 内部通信不可用时，再降级到飞书消息 API
+- 飞书消息仅用于：外部联系人、用户明确要求通过飞书传达的场景
+
+## Promoted From Short-Term Memory (2026-06-28)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:24:26 -->
+- 边界（我守住的）: 改 tts SOUL/MEMORY 时跟 HALEI 确认了"是动灵魂"; 删旧 cron/建新 cron 前跟 HALEI 确认了"v7.0 是否保留"; 没碰 HALEI 的 Chrome 登录流程 [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-25.md:24-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:29:31 -->
+- 待办: [ ] 观察 16:00 v8.0 cron 首次跑（越南 16:00 / 泰国 16:00）; [ ] 如果 16:00 跑成功，跟 HALEI 确认权重倾向 + API 修复方向; [ ] 自己的 MEMORY.md 是否要更新（店铺名 Heat Up Glow 现在归到 tts，不归我） [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-25.md:29-31]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:4:4 -->
+- 今日概要: **tts agent 系统性修复日**。HALEI 拍板后，我一次性完成 SOUL + daily + cron + MEMORY 四件事。 [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-25.md:4-4]
+
+## Promoted From Short-Term Memory (2026-06-29)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:13:16 -->
+- 推进过程: **SOUL.md 加铁律**：记忆铁律（每场结束写 daily）+ 店铺身份（不发明类目）; **补 6/10-6/13 daily**：tts 那四天完全空白（dreaming 没问题，问题在 tts 自己没写）; **删 v7.0 cron**：两条（id 6ee6a981 越南 / dde46f87 泰国）; **建 v8.0 cron**：两条新（id d6ea3ee4 越南 9/12/15/18 / id 91574622 泰国 10/13/16/19） [score=0.828 recalls=0 avg=0.620 source=memory/2026-06-25.md:13-16]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:17:17 -->
+- 推进过程: **更新 MEMORY.md**：店铺身份 / Cron 任务 / 已知限制 / 权重调整 [score=0.828 recalls=0 avg=0.620 source=memory/2026-06-25.md:17-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:20:21 -->
+- 遇到的小波折: HALEI 一开始以为让我直接动 SOUL，我说"重新打开浏览器"——中间插了一轮 Chrome 启动（HALEI 自己点登录卡片）; v7.0 cron "Context overflow: prompt too large for the model" → v8.0 提示词从 ~1.5KB 精简到 ~1.2KB [score=0.828 recalls=0 avg=0.620 source=memory/2026-06-25.md:20-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:34:35 -->
+- 自我反思: HALEI 说"我是让你重新打开浏览器"——我一开始误解为"动手干 SOUL"。教训：上下文里有"桌面""操作"时，先确认意图再行动。; "我看到桌面了"这句话的隐含信息：HALEI 已经看到结果了 → 我应该去启动/确认，不要绕。 [score=0.828 recalls=0 avg=0.620 source=memory/2026-06-25.md:34-35]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:7:10 -->
+- HALEI 拍板的关键决策: 店铺名：**Heat Up Glow - 时尚配件-发饰**; 主营：发饰（不换）; v7.0 cron（毛利率≥70% 硬卡）全部废弃 → v8.0（候选池+人工审核）上线; HALEI 自己操作 Chrome 登录"店铺专用" profile [score=0.828 recalls=0 avg=0.620 source=memory/2026-06-25.md:7-10]
+
+## Promoted From Short-Term Memory (2026-06-30)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:12:15 -->
+- 根因: 这台机器出公网，**`github.com` 主站的 `20.205.243.166:443` 走不通**（curl 超时 15s，IP 直连同样超时）; 但 `api.github.com`（`20.205.243.168:443`）和 `raw.githubusercontent.com` 0.5s 通; 典型"主站 IP 被墙、API 放行"; 脚本里 hardcode `https://${GH_TOKEN}@github.com/...` 正好命中坏路径 [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-27.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:23:26 -->
+- 修复方案（待 HALEI 拍板）: 给这台机器生成新 SSH key（`ssh-keygen -t ed25519 -C "openclaw-backup@halei"`，不设 passphrase 便于 cron）; HALEI 把公钥加到 GitHub 账号 `59330857` 的 SSH keys; 改 `backup.sh`：; remote URL 换成 `git@github.com:59330857/openclaw-backup.git` [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-27.md:23-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:32:33 -->
+- 安全 / 敏感信息: `~/.config/gh/hosts.yml` 里的 `oauth_token`（gho_***）当前已失效（401）; 处理：建议一并清理或 rotate [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-27.md:32-33]
+
+## Promoted From Short-Term Memory (2026-07-01)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:18:20 -->
+- SSH 状况: `ssh -T git@github.com` → `Permission denied (publickey)`，连接层成功（**22 端口没被墙**）; `~/.ssh/` 里有 `known_hosts` 但**没有任何私钥**（id_ed25519 / id_rsa / id_ecdsa 都没有）; `gh` 配的 `oauth_token` 当前 API 401（Bad credentials），备份脚本也没用这个 token 走 API [score=0.837 recalls=0 avg=0.620 source=memory/2026-06-27.md:18-20]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:27:29 -->
+- 修复方案（待 HALEI 拍板）: 移除 `GH_TOKEN` 那段（不再需要 PAT）; 手动跑一次脚本验证 + 立刻补一次 5.29~6.27 漏掉的备份（增量同步本地状态到 GitHub）; 长期：脚本里加 connectivity probe（`github.com` 不可达时不要直接 git pull 撞墙，记一条明显的 error） [score=0.837 recalls=0 avg=0.620 source=memory/2026-06-27.md:27-29]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:4:7 -->
+- github 备份中断排查: 现象：HALEI 反馈 `59330857/openclaw-backup` 仓库最后 commit 是 `2026-05-28 03:24`，30 天没新提交; cron 入口：`0 3 * * * /home/halei/.openclaw/workspace/skills/openclaw-backup/backup.sh`（脚本 v3.1 / 2026-04-21 写）; 本地日志 `/tmp/openclaw-full-backup.log` 只剩 6/26、6/27 两天（5.29 之后的历史被 rotate）; 6/26、6/27 报错一致： [score=0.837 recalls=0 avg=0.620 source=memory/2026-06-27.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-27.md:8:9 -->
+- github 备份中断排查: `fatal: 无法访问 'https://github.com/59330857/openclaw-backup.git/'：GnuTLS recv error (-110): The TLS connection was non-properly terminated.`; `fatal: 不是 git 仓库（或者任何父目录）：.git`（因为 git clone 失败，`/tmp/openclaw-backup-clone/` 不是 git repo） [score=0.837 recalls=0 avg=0.620 source=memory/2026-06-27.md:8-9]
+
+## Promoted From Short-Term Memory (2026-07-02)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:29:30 -->
+- 待 HALEI 决策: 这 2 个 skill 的归属由 HALEI 选定后，我再补一条 cron 或手工 upgrade; 升级脚本当前是 dumb，不能跨 owner 消歧；建议把 owner 写进 `lock.json` 的元数据里（需要修改 lockfile schema → 暂不动配置，等指令） [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-29.md:29-30]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:33:34 -->
+- 没动的 skill: 18 个非 lockfile skill：未尝试升级（clawhub 视角下不存在）; 不动 = 没动，跟「已是最新」是两种状态，不要混为一谈 [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-29.md:33-34]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:5:5 -->
+- 04:04 cron — 每日 skill 升级检查: **结果：本次 cron 未能完成自动升级。** [score=0.815 recalls=0 avg=0.620 source=memory/2026-06-29.md:5-5]
+
+## Promoted From Short-Term Memory (2026-07-03)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:14:17 -->
+- 失败明细: **context-engine**; 错误：`✖ Skill not found`; 含义：注册表已找不到该 slug（可能下架 / 重命名 / 私有）; 当前安装版本：2.1.1 [score=0.869 recalls=0 avg=0.620 source=memory/2026-06-29.md:14-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:20:23 -->
+- 失败明细: **self-improving-agent**; 错误：`AMBIGUOUS_SKILL_SLUG`，注册表返回 3 个同名 slug：; `@pskoett/self-improving-agent`; `@kingaiwork/self-improving-agent` [score=0.869 recalls=0 avg=0.620 source=memory/2026-06-29.md:20-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:24:26 -->
+- 失败明细: `@nguyenmanhdung-app/self-improving-agent`; 当前安装版本：3.0.24（lockfile 也没记录 owner，无法程序化判定）; 待办：需要 HALEI 确认要跟哪个 owner 的版本，再手工执行 `clawhub install @<owner>/self-improving-agent` [score=0.869 recalls=0 avg=0.620 source=memory/2026-06-29.md:24-26]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:18:18 -->
+- 失败明细: 待办：去 clawhub.ai 搜索新 slug，或确认是否要换成新版本 [score=0.837 recalls=0 avg=0.620 source=memory/2026-06-29.md:18-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-29.md:8:10 -->
+- 现状: `.clawhub/lock.json` 只追踪 2 个 skill：`context-engine 2.1.1` + `self-improving-agent 3.0.24`; `workspace/skills/` 下共 20 个 skill 文件夹，其余 18 个不在 clawhub lockfile 里（手工放置 / 不归 clawhub 管）; `clawhub update --all --no-input --force` 失败，触发单条流程也是失败 [score=0.837 recalls=0 avg=0.620 source=memory/2026-06-29.md:8-10]
