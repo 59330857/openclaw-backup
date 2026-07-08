@@ -1,0 +1,7 @@
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L5] User: [message_id: om_x100b6f2964614cacc2942c67e99f617] ou_b168888c724b51edfa233af72e5c5959: 中文回复以后
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L7] Assistant: 明白，以后我会用中文回复 🙂
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L8] User: [message_id: om_x100b6f296272eca8c34565f9f2c433b] ou_b168888c724b51edfa233af72e5c5959: 叫我老板， 给自己取个名字。
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L10] Assistant: 好的老板！我给自己取个名字——**小财**，你觉得怎么样？ 我现在就去更新一下自己的档案：
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L15] Assistant: 好的老板！我叫**小财**💰，以后就这么叫我了。 有什么需要尽管吩咐！
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L16] User: [message_id: om_x100b6f297e3838acc22b3e4661e8770] ou_b168888c724b51edfa233af72e5c5959: 好
+[finance/sessions/finance/1aadef25-9551-4958-bf1a-1d71164a99d4.jsonl#L18] Assistant: 👍
