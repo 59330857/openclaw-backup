@@ -1,0 +1,6 @@
+2026/04/28-15:02:29.970 842c Creating DB /home/halei/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_air.1688.com_0.indexeddb.leveldb since it was missing.
+2026/04/28-15:02:30.029 842c Reusing MANIFEST /home/halei/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_air.1688.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/28-15:19:25.677 842d Level-0 table #5: started
+2026/04/28-15:19:25.686 842d Level-0 table #5: 29757 bytes OK
+2026/04/28-15:19:25.696 842d Delete type=0 #3
+2026/04/28-15:19:25.697 842d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
