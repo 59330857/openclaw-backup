@@ -1,0 +1,17 @@
+{
+  "description": "选品专家 Agent - 负责产品筛选、市场调研、竞品分析、选品策略制定",
+  "capabilities": [
+    "市场潜力评估",
+    "竞品分析",
+    "产品筛选",
+    "数据驱动选品"
+  ],
+  "model": "gemini/gemini-2.0-flash",
+  "runtime": "subagent",
+  "spawnMode": "run",
+  "workspaceDir": "/home/halei/.openclaw/workspace-selector",
+  "runTimeoutSeconds": 300,
+  "cleanup": "keep",
+  "expectsCompletionMessage": true,
+  "createdAt": "2026-03-27T19:45:00+08:00"
+}
