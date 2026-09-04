@@ -1,2 +1,0 @@
-[main/sessions/main/0ab19f6c-a144-498b-9bad-cce8752f2b2c.jsonl#L6] Assistant: 我来执行每日 skill 升级检查。
-[main/sessions/main/0ab19f6c-a144-498b-9bad-cce8752f2b2c.jsonl#L18] Assistant: **Skill 升级检查报告** - **检查时间：** 2026-07-12 04:00 (Asia/Shanghai) - **当前已装 skill：** 2 个 - `context-engine` 2.1.1 - `self-improving-agent` 3.0.24 - **升级结果：** 失败 — clawhub 仓库报错 `Skill not found`（已重试 3 次均失败，疑似服务端临时异常或 context-engine 已从仓库下架） - **无升级（已是最新）：** 0 建议稍后手动重试，或确认
