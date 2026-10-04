@@ -1,0 +1,19 @@
+{
+  "providers": {
+    "minimax(49套餐)": {
+      "baseUrl": "https://api.minimaxi.com/anthropic/v1",
+      "apiKey": "sk-cp-yYxsCibjLjRK8Sx4q-K_a6c9H6G-hqQLw7GzGOv03Xv2kKgZDcbEKtVzAGvkbhts35yXqwzQBzO6lDW1ZPtW026EyowiGEhBpcXwJLQGEUs3ew5BB0_7BRU",
+      "api": "anthropic-messages",
+      "models": [
+        {
+          "id": "MiniMax-M3",
+          "input": [
+            "text",
+            "image"
+          ],
+          "name": "MiniMax-M3"
+        }
+      ]
+    }
+  }
+}

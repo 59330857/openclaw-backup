@@ -1,0 +1,1137 @@
+{
+  "channels": {
+    "wecom": {
+      "enabled": true,
+      "botId": "aibvZm8qlOJ9DWsxNBNQ9j6ITXziVPbBhSB",
+      "secret": "P205xliEgFGyT7BfkAN5JU2GUApJoOkHRsPq6qcM1qs"
+    },
+    "openclaw-weixin": {
+      "enabled": true,
+      "accounts": {}
+    },
+    "feishu": {
+      "enabled": true,
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "appId": "cli_a93650c6fc785bce",
+      "appSecret": {
+        "source": "file",
+        "provider": "lark-secrets",
+        "id": "/lark/appSecret"
+      },
+      "accounts": {
+        "kiit": {
+          "appId": "cli_a93650c6fc785bce",
+          "appSecret": "I6PGaAjXEqMW81COlOcRzc7zpdd2qqOV",
+          "enabled": true
+        },
+        "agent-orchestrator": {
+          "appId": "cli_a9558a1795799bb5",
+          "appSecret": "kEkT9W8GvJcIIfaNzHUuycoOlKBbq2qg",
+          "enabled": true,
+          "name": "Agent 编掔工程师"
+        },
+        "default": {
+          "webhookPath": "/feishu/events",
+          "dmPolicy": "pairing",
+          "groupPolicy": "open"
+        },
+        "content": {
+          "appId": "cli_a978060ba7249bd8",
+          "appSecret": "D5dvPrUEwOLR4hFkWMDljePX0qe1Zx4m",
+          "enabled": true,
+          "name": "🎬 内容专家"
+        },
+        "traffic": {
+          "appId": "cli_a9365703ce78dbb5",
+          "appSecret": "0RBRotSnYGHL3R50rI8qLc2lqKYfo3oP",
+          "enabled": true,
+          "name": "📢 投流专家"
+        },
+        "ops": {
+          "appId": "cli_a954f94ade79dbcd",
+          "appSecret": "ItfAmbwX6wPpQEjBRICrHoJM6dASKUZK",
+          "enabled": true,
+          "name": "📊 运营助手"
+        },
+        "director": {
+          "appId": "cli_a96d9bcb44b9dcba",
+          "appSecret": "R3WdlODWIQOZNQN6kymUNAWX4TVM6ReN",
+          "enabled": true,
+          "name": "🧭 运营总监"
+        },
+        "finance": {
+          "appId": "cli_a96af4eceab99cb5",
+          "appSecret": "wJBGmscDEEyBEag7T4XmDg0At6YMUepQ",
+          "enabled": true,
+          "name": "💰 财务助手"
+        },
+        "review": {
+          "appId": "cli_a954fb807f7adcd2",
+          "appSecret": "yDRHQfsIWEMPur3Ab65IXcWkUl6KH4Ak",
+          "enabled": true,
+          "name": "💬 评论专家"
+        },
+        "koc": {
+          "appId": "cli_a96af5b441f91bb5",
+          "appSecret": "RfoutGFTe286KfKzdH3RqeW4qLxjWd7P",
+          "enabled": true,
+          "name": "🤝 达人��������������营"
+        },
+        "tts": {
+          "enabled": true,
+          "appId": "cli_a930f78f51399bc6",
+          "appSecret": "sWYftqexDF2zr6I36ofoyhSz8rLxThbY",
+          "connectionMode": "websocket",
+          "dmPolicy": "allowlist",
+          "allowFrom": [
+            "ou_f590c429b7ded95568bebca2f534efdb",
+            "ou_42b0f5aa88c1415647c200a3dc0a8f68"
+          ]
+        }
+      },
+      "defaultAccount": "kiit",
+      "streaming": true,
+      "typingIndicator": false,
+      "webhookPath": "/feishu/events",
+      "dmPolicy": "allowlist",
+      "groupPolicy": "open",
+      "reactionNotifications": "own",
+      "resolveSenderNames": true,
+      "allowFrom": [
+        "ou_f590c429b7ded95568bebca2f534efdb"
+      ],
+      "groupAllowFrom": [
+        "ou_f590c429b7ded95568bebca2f534efdb"
+      ],
+      "footer": {
+        "elapsed": true,
+        "status": true
+      },
+      "threadSession": true
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.8.2",
+    "migrations": {
+      "modelPolicyAllowlist": true
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "password",
+      "password": "OpenClaw@2026"
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "tauri://localhost",
+        "https://tauri.localhost",
+        "http://tauri.localhost",
+        "http://localhost",
+        "http://localhost:1420",
+        "http://127.0.0.1:1420",
+        "http://localhost:18777",
+        "http://127.0.0.1:18777",
+        "http://192.168.31.146:1420",
+        "http://192.168.31.146:18777",
+        "http://172.17.0.1:1420",
+        "http://172.17.0.1:18777",
+        "http://172.24.0.1:1420",
+        "http://172.24.0.1:18777"
+      ]
+    },
+    "bind": "lan"
+  },
+  "plugins": {
+    "entries": {
+      "memory-core": {
+        "config": {
+          "dreaming": {
+            "enabled": true
+          }
+        },
+        "enabled": true
+      },
+      "minimax": {
+        "enabled": true,
+        "config": {}
+      },
+      "feishu": {
+        "enabled": false,
+        "config": {}
+      },
+      "browser": {
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
+      },
+      "workboard": {
+        "enabled": true,
+        "config": {}
+      },
+      "searxng": {
+        "enabled": false,
+        "config": {
+          "webSearch": {
+            "baseUrl": "http://127.0.0.1:8888"
+          }
+        }
+      },
+      "openclaw-weixin": {
+        "enabled": true
+      },
+      "wecom-openclaw-plugin": {
+        "enabled": true
+      },
+      "a2a": {
+        "enabled": true
+      }
+    },
+    "allow": [
+      "browser",
+      "memory-core",
+      "minimax",
+      "openclaw-weixin",
+      "openrouter",
+      "wecom-openclaw-plugin",
+      "workboard",
+      "a2a"
+    ]
+  },
+  "logging": {
+    "level": "warn"
+  },
+  "tools": {
+    "profile": "full",
+    "sessions": {
+      "visibility": "all"
+    },
+    "alsoAllow": [
+      "wecom_mcp"
+    ],
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "main",
+        "tts",
+        "content",
+        "koc",
+        "traffic",
+        "ops",
+        "director",
+        "finance",
+        "review",
+        "agent-orchestrator"
+      ]
+    }
+  },
+  "models": {
+    "mode": "replace",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimaxi.com/anthropic/v1",
+        "apiKey": "sk-cp-gtdRxxiZ_Qu_-9GM0xBF6UpeDvsYl8cPe4Y9mA-Xiy2GO8eBJSNPftqJdMb0Fl9OZAkY6sQR868fRUhTBV7OtwKyDfu-DzegI9-cDZERwbQGf3C5Wuvs38c",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "contextWindow": 204000,
+            "input": [
+              "text",
+              "image"
+            ],
+            "reasoning": true,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.7-highspeed",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "MiniMax-M2.7-highspeed"
+          }
+        ]
+      },
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "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",
+        "auth": "api-key",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek/deepseek-v4-flash:free",
+            "name": "DeepSeek V4 Flash (免费)",
+            "input": [
+              "text",
+              "image"
+            ]
+          },
+          {
+            "id": "openai/gpt-4o",
+            "name": "GPT-4o",
+            "input": [
+              "text",
+              "image"
+            ]
+          },
+          {
+            "id": "openai/gpt-4o-mini",
+            "name": "GPT-4o Mini",
+            "input": [
+              "text",
+              "image"
+            ]
+          },
+          {
+            "id": "anthropic/claude-3.5-sonnet",
+            "name": "Claude 3.5 Sonnet",
+            "input": [
+              "text",
+              "image"
+            ]
+          },
+          {
+            "id": "google/gemini-2.0-flash",
+            "name": "Gemini 2.0 Flash",
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        ]
+      },
+      "minimax(49套餐)": {
+        "baseUrl": "https://api.minimaxi.com/anthropic/v1",
+        "apiKey": "sk-cp-yYxsCibjLjRK8Sx4q-K_a6c9H6G-hqQLw7GzGOv03Xv2kKgZDcbEKtVzAGvkbhts35yXqwzQBzO6lDW1ZPtW026EyowiGEhBpcXwJLQGEUs3ew5BB0_7BRU",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M3",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "MiniMax-M3"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "fallbacks": [
+          "openrouter/deepseek/deepseek-v4-flash:free",
+          "openrouter/openai/gpt-4o",
+          "openrouter/openai/gpt-4o-mini",
+          "openrouter/anthropic/claude-3.5-sonnet",
+          "openrouter/google/gemini-2.0-flash"
+        ],
+        "primary": "minimax/MiniMax-M2.7"
+      },
+      "models": {
+        "minimax/MiniMax-M2.5": {},
+        "minimax/MiniMax-M2.7": {},
+        "openrouter/deepseek/deepseek-v4-flash:free": {},
+        "openrouter/openai/gpt-4o": {},
+        "openrouter/openai/gpt-4o-mini": {},
+        "openrouter/anthropic/claude-3.5-sonnet": {},
+        "openrouter/google/gemini-2.0-flash": {}
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "modelPolicy": {
+        "allow": [
+          "minimax/MiniMax-M2.5",
+          "minimax/MiniMax-M2.7",
+          "openrouter/deepseek/deepseek-v4-flash:free",
+          "openrouter/openai/gpt-4o",
+          "openrouter/openai/gpt-4o-mini",
+          "openrouter/anthropic/claude-3.5-sonnet",
+          "openrouter/google/gemini-2.0-flash"
+        ]
+      }
+    },
+    "ownership": "explicit",
+    "entries": {
+      "main": {
+        "identity": {
+          "name": "KITT-AGI"
+        },
+        "model": {
+          "primary": "minimax(49套餐)/MiniMax-M3",
+          "fallbacks": [
+            "minimax/MiniMax-M2.7",
+            "openrouter/deepseek/deepseek-v4-flash:free"
+          ]
+        },
+        "thinkingDefault": "adaptive",
+        "tools": {
+          "profile": "full",
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        },
+        "subagents": {
+          "allowAgents": [
+            "tts",
+            "content",
+            "koc",
+            "traffic",
+            "ops",
+            "director",
+            "finance",
+            "review",
+            "agent-orchestrator"
+          ],
+          "requireAgentId": true
+        }
+      },
+      "tts": {
+        "identity": {
+          "name": "TK 选品大师"
+        },
+        "model": "minimax/MiniMax-M2.7",
+        "workspace": "/home/halei/workspace-tts",
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        },
+        "thinkingDefault": "adaptive"
+      },
+      "agent-orchestrator": {
+        "identity": {
+          "name": "Agent 编排工程师"
+        },
+        "model": "minimax/MiniMax-M2.7",
+        "workspace": "/home/halei/workspace-agent-orchestrator",
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      },
+      "content": {
+        "name": "content",
+        "workspace": "/home/halei/workspace-content",
+        "agentDir": "/home/halei/.openclaw/agents/content/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "identity": {
+          "name": "TK 内容专家"
+        },
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      },
+      "koc": {
+        "name": "koc",
+        "workspace": "/home/halei/workspace-koc",
+        "agentDir": "/home/halei/.openclaw/agents/koc/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "identity": {
+          "name": "TK 达人专家"
+        },
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      },
+      "traffic": {
+        "name": "traffic",
+        "workspace": "/home/halei/workspace-traffic",
+        "agentDir": "/home/halei/.openclaw/agents/traffic/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "identity": {
+          "name": "TK 投流专家"
+        },
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      },
+      "ops": {
+        "name": "ops",
+        "workspace": "/home/halei/workspace-ops",
+        "agentDir": "/home/halei/.openclaw/agents/ops/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "identity": {
+          "name": "TK 运营助手"
+        },
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      },
+      "director": {
+        "name": "director",
+        "workspace": "/home/halei/workspace-director",
+        "agentDir": "/home/halei/.openclaw/agents/director/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "identity": {
+          "name": "TK 运营总监"
+        },
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      },
+      "finance": {
+        "name": "finance",
+        "workspace": "/home/halei/workspace-finance",
+        "agentDir": "/home/halei/.openclaw/agents/finance/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        },
+        "identity": {
+          "name": "财务助手"
+        }
+      },
+      "review": {
+        "name": "review",
+        "workspace": "/home/halei/workspace-review",
+        "agentDir": "/home/halei/.openclaw/agents/review/agent",
+        "model": "minimax/MiniMax-M2.7",
+        "identity": {
+          "name": "TK 客����家"
+        },
+        "tools": {
+          "alsoAllow": [
+            "feishu_bitable_app",
+            "feishu_bitable_app_table",
+            "feishu_bitable_app_table_field",
+            "feishu_bitable_app_table_record",
+            "feishu_bitable_app_table_view",
+            "feishu_calendar_calendar",
+            "feishu_calendar_event",
+            "feishu_calendar_event_attendee",
+            "feishu_calendar_freebusy",
+            "feishu_chat",
+            "feishu_chat_members",
+            "feishu_create_doc",
+            "feishu_doc_comments",
+            "feishu_doc_media",
+            "feishu_drive_file",
+            "feishu_fetch_doc",
+            "feishu_get_user",
+            "feishu_im_bot_image",
+            "feishu_im_user_fetch_resource",
+            "feishu_im_user_get_messages",
+            "feishu_im_user_get_thread_messages",
+            "feishu_im_user_message",
+            "feishu_im_user_search_messages",
+            "feishu_oauth",
+            "feishu_oauth_batch_auth",
+            "feishu_search_doc_wiki",
+            "feishu_search_user",
+            "feishu_sheet",
+            "feishu_task_comment",
+            "feishu_task_subtask",
+            "feishu_task_task",
+            "feishu_task_agent",
+            "feishu_task_attachment",
+            "feishu_task_tasklist",
+            "feishu_update_doc",
+            "feishu_wiki_space",
+            "feishu_wiki_space_node"
+          ]
+        }
+      }
+    }
+  },
+  "commands": {
+    "ownerAllowFrom": [
+      "feishu:ou_f590c429b7ded95568bebca2f534efdb"
+    ]
+  },
+  "bindings": [
+    {
+      "type": "route",
+      "agentId": "main",
+      "match": {
+        "accountId": "kiit",
+        "channel": "feishu"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "agent-orchestrator",
+      "match": {
+        "accountId": "agent-orchestrator",
+        "channel": "feishu"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "content",
+      "match": {
+        "accountId": "content",
+        "channel": "feishu"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "traffic",
+      "match": {
+        "channel": "feishu",
+        "accountId": "traffic"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "ops",
+      "match": {
+        "channel": "feishu",
+        "accountId": "ops"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "director",
+      "match": {
+        "channel": "feishu",
+        "accountId": "director"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "finance",
+      "match": {
+        "channel": "feishu",
+        "accountId": "finance"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "review",
+      "match": {
+        "channel": "feishu",
+        "accountId": "review"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "koc",
+      "match": {
+        "channel": "feishu",
+        "accountId": "koc"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "tts",
+      "match": {
+        "accountId": "tts",
+        "channel": "feishu"
+      }
+    }
+  ],
+  "skills": {
+    "entries": {
+      "bluebubbles": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "apple-notes": {
+        "enabled": false
+      },
+      "1password": {
+        "enabled": false
+      },
+      "apple-reminders": {
+        "enabled": false
+      },
+      "bear-notes": {
+        "enabled": false
+      },
+      "blogwatcher": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "discord": {
+        "enabled": false
+      },
+      "eightctl": {
+        "enabled": false
+      },
+      "gemini": {
+        "enabled": false
+      },
+      "coding-agent": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "gifgrep": {
+        "enabled": false
+      },
+      "gh-issues": {
+        "enabled": false
+      },
+      "imsg": {
+        "enabled": false
+      },
+      "notion": {
+        "enabled": false
+      },
+      "obsidian": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "openai-whisper": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "peekaboo": {
+        "enabled": false
+      },
+      "sag": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "slack": {
+        "enabled": false
+      },
+      "songsee": {
+        "enabled": false
+      },
+      "sonoscli": {
+        "enabled": false
+      },
+      "spotify-player": {
+        "enabled": false
+      },
+      "things-mac": {
+        "enabled": false
+      },
+      "xurl": {
+        "enabled": false
+      },
+      "wacli": {
+        "enabled": false
+      },
+      "qqbot-media": {
+        "enabled": false
+      },
+      "qqbot-remind": {
+        "enabled": false
+      },
+      "qqbot-channel": {
+        "enabled": false
+      },
+      "gog": {
+        "enabled": false
+      },
+      "model-usage": {
+        "enabled": false
+      },
+      "nano-pdf": {
+        "enabled": false
+      },
+      "session-logs": {
+        "enabled": false
+      },
+      "summarize": {
+        "enabled": false
+      },
+      "tmux": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      },
+      "video-frames": {
+        "enabled": false
+      },
+      "voice-call": {
+        "enabled": false
+      },
+      "capability-evolver": {
+        "enabled": false
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-09-02T12:52:58.586Z",
+    "lastRunVersion": "2026.8.2",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "secrets": {
+    "providers": {
+      "lark-secrets": {
+        "source": "file",
+        "path": "~/.openclaw/credentials/lark.secrets.json"
+      }
+    }
+  },
+  "browser": {
+    "headless": false
+  },
+  "messages": {
+    "statusReactions": {
+      "enabled": false
+    }
+  },
+  "ui": {
+    "prefs": {}
+  }
+}
