@@ -1,0 +1,2 @@
+[traffic/sessions/traffic/be74ae65-3c8c-4b57-82ee-5a24620f760b.jsonl#L6] Assistant: **🚀 TK 投流专家 能力汇报** --- **1. 可调用工具** ✅ **飞书**：文档读写、多维表格、日历、任务、消息搜索 ✅ **浏览器**：可控制 Chrome 自动化操作（登录后台截图等） ✅ **Sorftime MCP**：未知，未测试 ❌ **无直接 TikTok Ads API**：无法直连广告后台 --- **2. 广告数据获取能力** | 指标 | 能否获取 | |------|---------| | 消耗 | ❌ 不能（无 API） | | ROI / GMV | ❌ 不能 | | 
+[traffic/sessions/traffic/be74ae65-3c8c-4b57-82ee-5a24620f760b.jsonl#L8] Assistant: ANNOUNCE_SKIP

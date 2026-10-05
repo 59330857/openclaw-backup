@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "jobs": {
+    "2c9ba2b3-e380-4ca6-8f8d-f9dab9b920d9": {
+      "updatedAtMs": 1780513255583,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
+      "state": {
+        "nextRunAtMs": 1780599600000,
+        "lastRunAtMs": 1780513200007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 55576,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0,
+        "lastFailureNotificationDeliveryStatus": "not-requested"
+      }
+    },
+    "tts-config-reminder": {
+      "updatedAtMs": 1778288400027,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":false,\"schedule\":{\"kind\":\"at\",\"at\":\"2026-05-09T01:00:00.000Z\"}}",
+      "state": {
+        "lastRunAtMs": 1778288400012,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 15,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0
+      }
+    },
+    "5c75bbb4-b1c3-446b-bde9-74bed5a396c6": {
+      "updatedAtMs": 1780578132145,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 9,12,15,18,21 * * *\",\"tz\":\"Asia/Shanghai\"}}",
+      "state": {
+        "nextRunAtMs": 1780621200000,
+        "lastRunAtMs": 1780578000011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 132134,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 6,
+        "consecutiveSkipped": 0,
+        "lastFailureNotificationDeliveryStatus": "unknown",
+        "lastDiagnostics": {
+          "summary": "The AI service is temporarily overloaded. Please try again in a moment.",
+          "entries": [
+            {
+              "ts": 1780578132136,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "The AI service is temporarily overloaded. Please try again in a moment."
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "The AI service is temporarily overloaded. Please try again in a moment.",
+        "lastErrorReason": "overloaded",
+        "lastError": "FailoverError: The AI service is temporarily overloaded. Please try again in a moment."
+      }
+    },
+    "033adb0b-f08b-47e9-a0f6-a71bfe729a9d": {
+      "updatedAtMs": 1780517065913,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 4 * * *\",\"tz\":\"Asia/Shanghai\"}}",
+      "state": {
+        "nextRunAtMs": 1780603200000,
+        "lastRunAtMs": 1780516800014,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 265899,
+        "lastDeliveryStatus": "unknown",
+        "lastFailureNotificationDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0,
+        "lastError": "FallbackSummaryError: All models failed (3): minimax(49套餐)/MiniMax-M3: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | minimax/MiniMax-M2.7: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | openrouter/deepseek/deepseek-v4-flash:free: 401 User not found. (auth)",
+        "lastDiagnostics": {
+          "summary": "All models failed (3): minimax(49套餐)/MiniMax-M3: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | minimax/MiniMax-M2.7: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | openrouter/deepseek/deepseek-v4-flash:free: 401 User not found. (auth)",
+          "entries": [
+            {
+              "ts": 1780517065912,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "All models failed (3): minimax(49套餐)/MiniMax-M3: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | minimax/MiniMax-M2.7: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | openrouter/deepseek/deepseek-v4-flash:free: 401 User not found. (auth)"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "All models failed (3): minimax(49套餐)/MiniMax-M3: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | minimax/MiniMax-M2.7: {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"server is busy, please retry later\"}} (overloaded) | openrouter/deepseek/deepseek-v4-flash:free: 401 User not found. (auth)",
+        "lastErrorReason": "overloaded"
+      }
+    }
+  }
+}
