@@ -1,0 +1,6 @@
+[tts/sessions/tts/2652bb01-bf65-4c5b-b863-a27736b3ef69.jsonl#L5] User: 帮我我一款越南市场的利润款，发夹，发箍，发簪，都行。 给我一个完整的tiktok 商品店铺链接，
+[tts/sessions/tts/2652bb01-bf65-4c5b-b863-a27736b3ef69.jsonl#L6] Assistant: 好，先用 Sorftime 扫越南发饰市场，找利润达标的黑马品。
+[tts/sessions/tts/2652bb01-bf65-4c5b-b863-a27736b3ef69.jsonl#L10] Assistant: 好，看到一款增长不错的木簪（Trâm Cài Tóc Bằng Gỗ），7天销量273，月增长31.65%。先验证1688采购价和TikTok趋势。
+[tts/sessions/tts/2652bb01-bf65-4c5b-b863-a27736b3ef69.jsonl#L30] Assistant: 找到了一款非常稳定的利润款。让我写入飞书多维表格并汇报给你。
+[tts/sessions/tts/2652bb01-bf65-4c5b-b863-a27736b3ef69.jsonl#L44] Assistant: 记录写入成功（URL字段暂不支持TikTok链接格式）。给你完整汇报： --- ## 🇻🇳 越南市场利润款推荐 ### 🎯 推荐产品：SÂU HOUSE 6齿发爪夹（买1送1套装） **TikTok 商品链接：** https://shop.tiktok.com/en/product/1732311961339659361 --- ### 核心数据 | 指标 | 数值 | |------|------| | **售价** | 49,000 VND（≈$1.96） | | **周销量** | ~1,140 件 | | **月
+[tts/sessions/tts/2652bb01-bf65-4c5b-b863-a27736b3ef69.jsonl#L44] Assistant: 韩国"找同款，目标是找到≤¥4/套的供应商 - **注意：** "买1送1"套餐说明库存压力低、起批量大，首单50件谈判空间充足 --- **已写入飞书多维表：** https://bytedance.feishu.cn/base/AKppbAeyXanToTsVl6ScxO5QnZd

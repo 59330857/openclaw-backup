@@ -1,0 +1,19 @@
+{
+  "id": "32cb17e5-d1be-4064-8eca-5072edf359e2",
+  "enqueuedAt": 1775114142755,
+  "channel": "feishu",
+  "to": "user:ou_f590c429b7ded95568bebca2f534efdb",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "⚠️ tts agent 正在请求批准3个操作，但你刚说了\"不要撤回\"，所以我没有批准任何操作。\n\n待批准的操作：\n1. 删除 `TTS-选品专家-SOUL.md`\n2. 撤销 workspace 所有未提交改动\n3. 清空 agents/ 目录\n\n**这些操作目前全部暂停**，配置文件保持原样。如果你想继续这些操作，回复我批准即可 ✅",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": false,
+  "retryCount": 5,
+  "lastAttemptAt": 1775298788351,
+  "lastError": "LarkClient[default]: appId and appSecret are required"
+}
