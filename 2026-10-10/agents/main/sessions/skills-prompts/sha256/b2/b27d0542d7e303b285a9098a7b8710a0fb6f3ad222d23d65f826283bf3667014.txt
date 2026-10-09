@@ -1,0 +1,294 @@
+
+
+The following skills provide specialized instructions for specific tasks.
+Use the read tool to load a skill's file when the task matches its description.
+If a skill's <version> differs from a previous turn, re-read its SKILL.md before using it.
+When a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.
+
+<available_skills>
+  <skill>
+    <name>Agent Browser</name>
+    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>
+    <location>~/.openclaw/workspace/skills/agent-browser/SKILL.md</location>
+    <version>sha256:04afeeb53a8b6ab9</version>
+  </skill>
+  <skill>
+    <name>auto-updater</name>
+    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>
+    <location>~/.openclaw/skills/auto-updater/SKILL.md</location>
+    <version>sha256:4142916e146caa90</version>
+  </skill>
+  <skill>
+    <name>browser-automation</name>
+    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>
+    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>
+    <version>sha256:608bed60aca52631</version>
+  </skill>
+  <skill>
+    <name>canvas</name>
+    <description>Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/canvas/SKILL.md</location>
+    <version>sha256:7419e23f242397b3</version>
+  </skill>
+  <skill>
+    <name>clawhub</name>
+    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>
+    <version>sha256:920a3d7387e32536</version>
+  </skill>
+  <skill>
+    <name>context-engine</name>
+    <description>Loads and manages company context for all C-suite advisor skills. Reads ~/.claude/company-context.md, detects stale context (&gt;90 days), enriches context during conversations, and enforces privacy/anonymization rules before external API calls.</description>
+    <location>~/.openclaw/workspace/skills/context-engine/SKILL.md</location>
+    <version>sha256:1a1660d0c0b7c4f4</version>
+  </skill>
+  <skill>
+    <name>diagram-maker</name>
+    <description>Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/diagram-maker/SKILL.md</location>
+    <version>sha256:6195e03fcb04a1a6</version>
+  </skill>
+  <skill>
+    <name>dreamina-cli</name>
+    <description>Use when an agent needs Dreamina（即梦） image or video generation through the dreamina CLI.</description>
+    <location>~/.openclaw/workspace/skills/dreamina-cli/SKILL.md</location>
+    <version>sha256:d4cfeff6cf8469c5</version>
+  </skill>
+  <skill>
+    <name>feishu-bitable</name>
+    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。
+
+**当以下情况时使用此 Skill**：
+(1) 需要创建或管理飞书多维表格 App
+(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）
+(3) 需要管理字段（列）、视图、数据表
+(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;
+(5) 需要批量导入数据或批量更新多维表格</description>
+    <location>~/.openclaw/plugin-skills/feishu-bitable/SKILL.md</location>
+    <version>sha256:33d864153124c85f</version>
+  </skill>
+  <skill>
+    <name>feishu-calendar</name>
+    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>
+    <location>~/.openclaw/plugin-skills/feishu-calendar/SKILL.md</location>
+    <version>sha256:98d11afa39cbe2f7</version>
+  </skill>
+  <skill>
+    <name>feishu-channel-rules</name>
+    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>
+    <location>~/.openclaw/plugin-skills/feishu-channel-rules/SKILL.md</location>
+    <version>sha256:e7197f146a7e7c69</version>
+  </skill>
+  <skill>
+    <name>feishu-create-doc</name>
+    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>
+    <location>~/.openclaw/plugin-skills/feishu-create-doc/SKILL.md</location>
+    <version>sha256:54c48e32dbc59d95</version>
+  </skill>
+  <skill>
+    <name>feishu-doc</name>
+    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>
+    <version>sha256:6df9c4a747e18bb2</version>
+  </skill>
+  <skill>
+    <name>feishu-drive</name>
+    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>
+    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>
+    <version>sha256:b5fe2cded3ea21a9</version>
+  </skill>
+  <skill>
+    <name>feishu-fetch-doc</name>
+    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>
+    <location>~/.openclaw/plugin-skills/feishu-fetch-doc/SKILL.md</location>
+    <version>sha256:5c43b2045f078cc8</version>
+  </skill>
+  <skill>
+    <name>feishu-im-read</name>
+    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。
+
+**当以下情况时使用此 Skill**:
+(1) 需要获取群聊或单聊的历史消息
+(2) 需要读取话题（thread）内的回复消息
+(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）
+(4) 消息中包含图片、文件、音频、视频，需要下载
+(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;
+(6) 需要按时间范围过滤消息、分页获取更多消息</description>
+    <location>~/.openclaw/plugin-skills/feishu-im-read/SKILL.md</location>
+    <version>sha256:8dba4d9fc35b421d</version>
+  </skill>
+  <skill>
+    <name>feishu-perm</name>
+    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>
+    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>
+    <version>sha256:db64b7c5ccb46699</version>
+  </skill>
+  <skill>
+    <name>feishu-task</name>
+    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。
+
+**当以下情况时使用此 Skill**:
+(1) 需要创建、查询、更新任务
+(2) 需要创建、管理任务清单
+(3) 需要查看任务列表或清单内的任务
+(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;
+(5) 需要设置任务负责人、关注人、截止时间、添加成员
+(6) 需要追加任务步骤记录（Task 的 steps）
+(7) 需要上传任务附件（支持 task / task_delivery）
+(8) 需要注册 Agent / 更新 Agent 信息（register / update_profile）</description>
+    <location>~/.openclaw/plugin-skills/feishu-task/SKILL.md</location>
+    <version>sha256:b0ea996965ab1330</version>
+  </skill>
+  <skill>
+    <name>feishu-troubleshoot</name>
+    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。
+
+常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），
+会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>
+    <location>~/.openclaw/plugin-skills/feishu-troubleshoot/SKILL.md</location>
+    <version>sha256:6f0e43bc7958ec37</version>
+  </skill>
+  <skill>
+    <name>feishu-update-doc</name>
+    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>
+    <location>~/.openclaw/plugin-skills/feishu-update-doc/SKILL.md</location>
+    <version>sha256:88290c8674d0d63b</version>
+  </skill>
+  <skill>
+    <name>feishu-wiki</name>
+    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>
+    <version>sha256:dd13485f82e80dfb</version>
+  </skill>
+  <skill>
+    <name>find-skills</name>
+    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>
+    <location>~/.openclaw/skills/find-skills/SKILL.md</location>
+    <version>sha256:54b44dc9539df865</version>
+  </skill>
+  <skill>
+    <name>github</name>
+    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>
+    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>
+    <version>sha256:51b28818a6f03592</version>
+  </skill>
+  <skill>
+    <name>healthcheck</name>
+    <description>Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>
+    <version>sha256:518ec6e0482cf1c7</version>
+  </skill>
+  <skill>
+    <name>humanizer</name>
+    <description>Remove signs of AI-generated writing from text. Use when editing or reviewing
+text to make it sound more natural and human-written. Based on Wikipedia&apos;s
+comprehensive &quot;Signs of AI writing&quot; guide. Detects and fixes patterns including:
+inflated symbolism, promotional language, superficial -ing analyses, vague
+attributions, em dash overuse, rule of three, AI vocabulary words, negative
+parallelisms, and excessive conjunctive phrases.</description>
+    <location>~/.openclaw/workspace/skills/humanizer/SKILL.md</location>
+    <version>sha256:d7ce483d368e4301</version>
+  </skill>
+  <skill>
+    <name>lossless-claw</name>
+    <description>Configure, diagnose, and use lossless-claw effectively in OpenClaw, with emphasis on key settings, summary health, and recall-tool usage.</description>
+    <location>~/.openclaw/workspace/skills/lossless-claw/SKILL.md</location>
+    <version>sha256:270338058a774f33</version>
+  </skill>
+  <skill>
+    <name>mcporter</name>
+    <description>List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>
+    <version>sha256:010ed9b265e58d45</version>
+  </skill>
+  <skill>
+    <name>meme-maker</name>
+    <description>Search meme templates, suggest formats, and generate local or hosted image memes.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/meme-maker/SKILL.md</location>
+    <version>sha256:8b8832f9f0f58b16</version>
+  </skill>
+  <skill>
+    <name>multi-search-engine</name>
+    <description>Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</description>
+    <location>~/.openclaw/workspace/skills/multi-search-engine/SKILL.md</location>
+    <version>sha256:ef2d2706e82ad0fc</version>
+  </skill>
+  <skill>
+    <name>node-connect</name>
+    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>
+    <version>sha256:cc39026fd84e5cfa</version>
+  </skill>
+  <skill>
+    <name>node-inspect-debugger</name>
+    <description>Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-inspect-debugger/SKILL.md</location>
+    <version>sha256:50d2f6828eaf4bbf</version>
+  </skill>
+  <skill>
+    <name>openclaw-doctor</name>
+    <description>OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。</description>
+    <location>~/.openclaw/workspace/skills/openclaw-doctor/SKILL.md</location>
+    <version>sha256:b18522c7d23cd5c9</version>
+  </skill>
+  <skill>
+    <name>python-debugpy</name>
+    <description>Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/python-debugpy/SKILL.md</location>
+    <version>sha256:bfb1891204b67260</version>
+  </skill>
+  <skill>
+    <name>searxng-search</name>
+    <description>SearXNG 元搜索引擎搜索。当用户需要搜索网络信息时使用，支持指定引擎、语言、时间范围、分类。不需要 API key，完全私有。支持普通搜索、图片搜索、新闻搜索。触发场景：(1) 用户说&quot;搜索一下...&quot;、&quot;帮我查一下...&quot; (2) 需要多引擎聚合结果时 (3) 替代 Google/Bing 单引擎搜索。</description>
+    <location>~/.openclaw/workspace/skills/searxng-search/SKILL.md</location>
+    <version>sha256:f0e77b46418c87ea</version>
+  </skill>
+  <skill>
+    <name>skill-creator</name>
+    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>
+    <location>~/.openclaw/workspace/skills/skill-creator/SKILL.md</location>
+    <version>sha256:b2e3d83f60425c2d</version>
+  </skill>
+  <skill>
+    <name>skill-vetter</name>
+    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>
+    <location>~/.openclaw/workspace/skills/skill-vetter/SKILL.md</location>
+    <version>sha256:e8eb7583355c2ae7</version>
+  </skill>
+  <skill>
+    <name>spike</name>
+    <description>Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/spike/SKILL.md</location>
+    <version>sha256:1258cde2d0e53267</version>
+  </skill>
+  <skill>
+    <name>taskflow</name>
+    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>
+    <version>sha256:d8b6a48d329aef0a</version>
+  </skill>
+  <skill>
+    <name>taskflow-inbox-triage</name>
+    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>
+    <version>sha256:1fe28cd924d8ae2d</version>
+  </skill>
+  <skill>
+    <name>tavily-search</name>
+    <description>Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.</description>
+    <location>~/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md</location>
+    <version>sha256:490da2ad7c928df0</version>
+  </skill>
+  <skill>
+    <name>vibesurf</name>
+    <description>Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.</description>
+    <location>~/.openclaw/workspace/skills/vibesurf/SKILL.md</location>
+    <version>sha256:1067d12663f888a2</version>
+  </skill>
+  <skill>
+    <name>weather</name>
+    <description>Get current weather and forecasts (no API key required).</description>
+    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>
+    <version>sha256:1ca0c8d768ad603e</version>
+  </skill>
+</available_skills>
