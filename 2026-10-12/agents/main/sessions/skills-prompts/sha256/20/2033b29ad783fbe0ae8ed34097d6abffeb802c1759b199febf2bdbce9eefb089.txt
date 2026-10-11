@@ -1,0 +1,148 @@
+
+
+The following skills provide specialized instructions for specific tasks.
+Use the read tool to load a skill's file when the task matches its description.
+When a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.
+
+<available_skills>
+  <skill>
+    <name>Agent Browser</name>
+    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>
+    <location>~/.openclaw/workspace/skills/agent-browser/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>auto-updater</name>
+    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>
+    <location>~/.openclaw/workspace/skills/auto-updater/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>browser-automation</name>
+    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>
+    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>clawhub</name>
+    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>context-engine</name>
+    <description>Loads and manages company context for all C-suite advisor skills. Reads ~/.claude/company-context.md, detects stale context (&gt;90 days), enriches context during conversations, and enforces privacy/anonymization rules before external API calls.</description>
+    <location>~/.openclaw/workspace/skills/context-engine/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>dreamina-cli</name>
+    <description>Use when an agent needs Dreamina（即梦） image or video generation through the dreamina CLI.</description>
+    <location>~/.openclaw/workspace/skills/dreamina-cli/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-doc</name>
+    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-drive</name>
+    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>
+    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-perm</name>
+    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>
+    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-wiki</name>
+    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>find-skills</name>
+    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>
+    <location>~/.openclaw/skills/find-skills/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>github</name>
+    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>
+    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>healthcheck</name>
+    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>humanizer</name>
+    <description>Remove signs of AI-generated writing from text. Use when editing or reviewing
+text to make it sound more natural and human-written. Based on Wikipedia&apos;s
+comprehensive &quot;Signs of AI writing&quot; guide. Detects and fixes patterns including:
+inflated symbolism, promotional language, superficial -ing analyses, vague
+attributions, em dash overuse, rule of three, AI vocabulary words, negative
+parallelisms, and excessive conjunctive phrases.</description>
+    <location>~/.openclaw/workspace/skills/humanizer/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>lossless-claw</name>
+    <description>Configure, diagnose, and use lossless-claw effectively in OpenClaw, with emphasis on key settings, summary health, and recall-tool usage.</description>
+    <location>~/.openclaw/workspace/skills/lossless-claw/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>mcporter</name>
+    <description>List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>multi-search-engine</name>
+    <description>Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</description>
+    <location>~/.openclaw/workspace/skills/multi-search-engine/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>node-connect</name>
+    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>openclaw-doctor</name>
+    <description>OpenClaw 诊断与维修工具。用于排查和修复 OpenClaw Gateway、通道、模型配置等问题。当用户报告 OpenClaw 无响应、功能异常、连接失败时使用此 Skill。</description>
+    <location>~/.openclaw/workspace/skills/openclaw-doctor/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>searxng-search</name>
+    <description>SearXNG 元搜索引擎搜索。当用户需要搜索网络信息时使用，支持指定引擎、语言、时间范围、分类。不需要 API key，完全私有。支持普通搜索、图片搜索、新闻搜索。触发场景：(1) 用户说&quot;搜索一下...&quot;、&quot;帮我查一下...&quot; (2) 需要多引擎聚合结果时 (3) 替代 Google/Bing 单引擎搜索。</description>
+    <location>~/.openclaw/workspace/skills/searxng-search/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>skill-creator</name>
+    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>
+    <location>~/.openclaw/workspace/skills/skill-creator/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>skill-vetter</name>
+    <description>Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</description>
+    <location>~/.openclaw/workspace/skills/skill-vetter/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>taskflow</name>
+    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>taskflow-inbox-triage</name>
+    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>tavily-search</name>
+    <description>Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links and Brave web_search is unavailable or undesired. Returns a small set of relevant results (title, url, snippet) and can optionally include short answer summaries.</description>
+    <location>~/.openclaw/workspace/skills/openclaw-tavily-search/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>vibesurf</name>
+    <description>Use when user asks to browse websites, automate browser tasks, fill forms, extract webpage data, search web information, or interact with external apps. This is the main entry point that delegates to detailed reference guides.</description>
+    <location>~/.openclaw/workspace/skills/vibesurf/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>weather</name>
+    <description>Get current weather and forecasts (no API key required).</description>
+    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>
+  </skill>
+</available_skills>
