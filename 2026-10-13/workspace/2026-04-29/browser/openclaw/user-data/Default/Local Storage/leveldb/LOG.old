@@ -1,0 +1,18 @@
+2026/04/28-19:47:27.227 5 Reusing MANIFEST /home/halei/.openclaw/browser/openclaw/user-data/Default/Local Storage/leveldb/MANIFEST-000001
+2026/04/28-19:47:27.237 5 Recovering log #33
+2026/04/28-19:47:27.238 5 Reusing old log /home/halei/.openclaw/browser/openclaw/user-data/Default/Local Storage/leveldb/000033.log 
+2026/04/28-19:47:38.074 7 Level-0 table #37: started
+2026/04/28-19:47:38.111 7 Level-0 table #37: 150562 bytes OK
+2026/04/28-19:47:38.127 7 Delete type=0 #33
+2026/04/28-19:47:38.133 7 Compacting 4@0 + 1@1 files
+2026/04/28-19:47:38.211 7 Generated table #38@0: 199 keys, 1061800 bytes
+2026/04/28-19:47:38.212 7 Compacted 4@0 + 1@1 files => 1061800 bytes
+2026/04/28-19:47:38.224 7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/28-19:47:38.227 7 Delete type=2 #34
+2026/04/28-19:47:38.227 7 Delete type=2 #32
+2026/04/28-19:47:38.227 7 Delete type=2 #27
+2026/04/28-19:47:38.227 7 Delete type=2 #29
+2026/04/28-19:47:38.228 7 Delete type=2 #37
+2026/04/28-19:47:43.274 7 Level-0 table #40: started
+2026/04/28-19:47:43.283 7 Level-0 table #40: 24124 bytes OK
+2026/04/28-19:47:43.295 7 Delete type=0 #36

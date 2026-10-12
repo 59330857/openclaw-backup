@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "profiles": {
+    "openrouter:default": {
+      "type": "api_key",
+      "provider": "openrouter",
+      "key": "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"
+    },
+    "minimax:cn": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "sk-cp-gtdRxxiZ_Qu_-9GM0xBF6UpeDvsYl8cPe4Y9mA-Xiy2GO8eBJSNPftqJdMb0Fl9OZAkY6sQR868fRUhTBV7OtwKyDfu-DzegI9-cDZERwbQGf3C5Wuvs38c"
+    }
+  }
+}
