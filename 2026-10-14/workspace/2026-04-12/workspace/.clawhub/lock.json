@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "skills": {
+    "self-improving-agent": {
+      "version": "3.0.6",
+      "installedAt": 1774448525498
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1774448882843
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1774449122807
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1774449180969
+    },
+    "multi-search-engine": {
+      "version": "2.0.1",
+      "installedAt": 1774449541261
+    },
+    "Summarize": {
+      "version": "1.0.0",
+      "installedAt": 1774449781697
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1774485537195
+    },
+    "mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1774485570984
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1774485699087
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1774504491558
+    },
+    "capability-evolver": {
+      "version": "1.31.0",
+      "installedAt": 1774504511565
+    },
+    "feishu-multi-agent-manager": {
+      "version": "2.0.2",
+      "installedAt": 1775053485773
+    },
+    "ontology": {
+      "version": "0.1.2",
+      "installedAt": 1775313895690
+    },
+    "self-improving": {
+      "version": "1.2.16",
+      "installedAt": 1775314309901
+    },
+    "auto-updater": {
+      "version": "1.0.0",
+      "installedAt": 1775439184241
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1775439377318
+    },
+    "polymarket-trade": {
+      "version": "1.0.6",
+      "installedAt": 1775439541684
+    },
+    "humanizer": {
+      "version": "1.0.0",
+      "installedAt": 1775440081755
+    },
+    "skill-creator": {
+      "version": "0.1.0",
+      "installedAt": 1775440154313
+    },
+    "openclaw-tavily-search": {
+      "version": "0.1.0",
+      "installedAt": 1775440201540
+    }
+  }
+}
