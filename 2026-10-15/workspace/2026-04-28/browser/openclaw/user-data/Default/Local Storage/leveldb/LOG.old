@@ -1,0 +1,45 @@
+2026/04/28-15:02:18.703 5 Reusing MANIFEST /home/halei/.openclaw/browser/openclaw/user-data/Default/Local Storage/leveldb/MANIFEST-000001
+2026/04/28-15:02:18.713 5 Recovering log #7
+2026/04/28-15:02:18.714 5 Reusing old log /home/halei/.openclaw/browser/openclaw/user-data/Default/Local Storage/leveldb/000007.log 
+2026/04/28-15:02:33.215 7 Level-0 table #11: started
+2026/04/28-15:02:33.231 7 Level-0 table #11: 249810 bytes OK
+2026/04/28-15:02:33.242 7 Delete type=0 #7
+2026/04/28-15:03:18.721 7 Level-0 table #13: started
+2026/04/28-15:03:18.731 7 Level-0 table #13: 113694 bytes OK
+2026/04/28-15:03:18.742 7 Delete type=0 #10
+2026/04/28-15:11:29.047 7 Level-0 table #15: started
+2026/04/28-15:11:29.066 7 Level-0 table #15: 208529 bytes OK
+2026/04/28-15:11:29.078 7 Delete type=0 #12
+2026/04/28-15:12:52.776 7 Level-0 table #17: started
+2026/04/28-15:12:52.789 7 Level-0 table #17: 99048 bytes OK
+2026/04/28-15:12:52.802 7 Delete type=0 #14
+2026/04/28-15:12:52.803 7 Compacting 4@0 + 1@1 files
+2026/04/28-15:12:52.835 7 Generated table #18@0: 129 keys, 746076 bytes
+2026/04/28-15:12:52.835 7 Compacted 4@0 + 1@1 files => 746076 bytes
+2026/04/28-15:12:52.846 7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/28-15:12:52.848 7 Delete type=2 #8
+2026/04/28-15:12:52.848 7 Delete type=2 #15
+2026/04/28-15:12:52.848 7 Delete type=2 #17
+2026/04/28-15:12:52.848 7 Delete type=2 #11
+2026/04/28-15:12:52.848 7 Delete type=2 #13
+2026/04/28-15:12:55.209 7 Level-0 table #20: started
+2026/04/28-15:12:55.241 7 Level-0 table #20: 201236 bytes OK
+2026/04/28-15:12:55.254 7 Delete type=0 #16
+2026/04/28-15:14:06.426 5 Level-0 table #22: started
+2026/04/28-15:14:06.438 5 Level-0 table #22: 93326 bytes OK
+2026/04/28-15:14:06.450 5 Delete type=0 #19
+2026/04/28-15:14:23.820 7 Level-0 table #24: started
+2026/04/28-15:14:23.834 7 Level-0 table #24: 28853 bytes OK
+2026/04/28-15:14:23.845 7 Delete type=0 #21
+2026/04/28-15:14:41.452 7 Level-0 table #26: started
+2026/04/28-15:14:41.485 7 Level-0 table #26: 21956 bytes OK
+2026/04/28-15:14:41.496 7 Delete type=0 #23
+2026/04/28-15:14:41.497 7 Compacting 4@0 + 1@1 files
+2026/04/28-15:14:41.528 7 Generated table #27@0: 198 keys, 1055168 bytes
+2026/04/28-15:14:41.528 7 Compacted 4@0 + 1@1 files => 1055168 bytes
+2026/04/28-15:14:41.538 7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/28-15:14:41.539 7 Delete type=2 #26
+2026/04/28-15:14:41.539 7 Delete type=2 #20
+2026/04/28-15:14:41.539 7 Delete type=2 #22
+2026/04/28-15:14:41.539 7 Delete type=2 #24
+2026/04/28-15:14:41.539 7 Delete type=2 #18
