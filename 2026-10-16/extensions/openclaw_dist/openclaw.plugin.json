@@ -1,0 +1,11 @@
+{
+  "id": "openclaw-dist",
+  "name": "OpenClaw Distribution Files",
+  "version": "2026.5.2",
+  "description": "Core runtime files for OpenClaw",
+  "entry": "index.js",
+  "configSchema": {},
+  "compatibility": {
+    "openclaw": "2026.5.2"
+  }
+}
