@@ -1,0 +1,48 @@
+# Credentials - NEVER backup
+credentials/
+*.pem
+*.key
+*.crt
+
+# Logs
+logs/
+
+# Large databases
+*.db
+*.db-shm
+*.db-wal
+
+# LanceDB (too large, backup separately if needed)
+memory/lancedb-pro/
+
+# Extensions (reinstallable via npm)
+extensions/
+
+# Subagents (runtime state)
+subagents/
+
+# Task runs (temporary)
+tasks/runs.sqlite
+
+# Docker volumes
+*.volume
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Sensitive configs with tokens/keys
+exec-approvals.json
+openviking.env
+openclaw.json
+openclaw.json.bak
+openclaw.json.bak.1
+openclaw.json.bak.2
+openclaw.json.bak.3
+openclaw.json.bak.4
+update-check.json
