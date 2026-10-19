@@ -1,0 +1,211 @@
+
+
+The following skills provide specialized instructions for specific tasks.
+Use the read tool to load a skill's file when the task matches its description.
+When a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.
+
+<available_skills>
+  <skill>
+    <name>Agent Browser</name>
+    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>
+    <location>~/.openclaw/skills/agent-browser/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>auto-updater</name>
+    <description>Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and messages the user with a summary of what changed.</description>
+    <location>~/.openclaw/skills/auto-updater/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>browser-automation</name>
+    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>
+    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>canvas</name>
+    <description>Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/canvas/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>clawhub</name>
+    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>diagram-maker</name>
+    <description>Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/diagram-maker/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-bitable</name>
+    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。
+
+**当以下情况时使用此 Skill**：
+(1) 需要创建或管理飞书多维表格 App
+(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）
+(3) 需要管理字段（列）、视图、数据表
+(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;
+(5) 需要批量导入数据或批量更新多维表格</description>
+    <location>~/.openclaw/plugin-skills/feishu-bitable/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-calendar</name>
+    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>
+    <location>~/.openclaw/plugin-skills/feishu-calendar/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-channel-rules</name>
+    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>
+    <location>~/.openclaw/plugin-skills/feishu-channel-rules/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-create-doc</name>
+    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>
+    <location>~/.openclaw/plugin-skills/feishu-create-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-doc</name>
+    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-drive</name>
+    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>
+    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-fetch-doc</name>
+    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>
+    <location>~/.openclaw/plugin-skills/feishu-fetch-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-im-read</name>
+    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。
+
+**当以下情况时使用此 Skill**:
+(1) 需要获取群聊或单聊的历史消息
+(2) 需要读取话题（thread）内的回复消息
+(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）
+(4) 消息中包含图片、文件、音频、视频，需要下载
+(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;
+(6) 需要按时间范围过滤消息、分页获取更多消息</description>
+    <location>~/.openclaw/plugin-skills/feishu-im-read/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-perm</name>
+    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>
+    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-task</name>
+    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。
+
+**当以下情况时使用此 Skill**:
+(1) 需要创建、查询、更新任务
+(2) 需要创建、管理任务清单
+(3) 需要查看任务列表或清单内的任务
+(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;
+(5) 需要设置任务负责人、关注人、截止时间、添加成员
+(6) 需要追加任务步骤记录（Task 的 steps）
+(7) 需要上传任务附件（支持 task / task_delivery）
+(8) 需要注册 Agent / 更新 Agent 信息（register / update_profile）</description>
+    <location>~/.openclaw/plugin-skills/feishu-task/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-troubleshoot</name>
+    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。
+
+常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），
+会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>
+    <location>~/.openclaw/plugin-skills/feishu-troubleshoot/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-update-doc</name>
+    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>
+    <location>~/.openclaw/plugin-skills/feishu-update-doc/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>feishu-wiki</name>
+    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>
+    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>find-skills</name>
+    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>
+    <location>~/.openclaw/skills/find-skills/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>github</name>
+    <description>GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/github/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>healthcheck</name>
+    <description>Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>mcporter</name>
+    <description>List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>meme-maker</name>
+    <description>Search meme templates, suggest formats, and generate local or hosted image memes.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/meme-maker/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>miaoshou-erp-source-import</name>
+    <description>Collect supplier/source product links into the Miaoshou ERP common collect box. Use when the user provides product source URLs or asks to collect, fetch, import, crawl, or batch collect products from 1688, AliExpress, supplier pages, or other source links into the common collect box.</description>
+    <location>~/workspace-tts/skills/miaoshou-erp-source-import/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>miaoshou-erp-tiktok-product-edit</name>
+    <description>Query, diagnose, and edit Miaoshou ERP TikTok collect box products before publishing, including list/detail queries, shop mode and site mode edits, title, description, SKU, price, stock, weight, images, category, attributes, warehouse, manufacturer, responsible person, and publish readiness checks. Use when the user mentions &quot;TikTok采集箱&quot;, &quot;TK采集箱&quot;, &quot;TikTok商品编辑&quot;, &quot;TK商品查询&quot;, &quot;补全发布信息&quot;, or wants to prepare TikTok collect box products for publishing.</description>
+    <location>~/workspace-tts/skills/miaoshou-erp-tiktok-product-edit/miaoshou-erp-tiktok-product-edit/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>miaoshou-erp-tiktok-product-publish</name>
+    <description>Publish Miaoshou ERP TikTok collect box products to TikTok shops after readiness checks, including shop lookup, pending product listing, pre-claim checks, publish validation, and submit publish tasks. Use when the user mentions &quot;发布商品到TK&quot;, &quot;发布到TikTok&quot;, &quot;TikTok发布&quot;, &quot;TK采集箱发布&quot;, &quot;待发布商品&quot;, &quot;上架&quot;, or wants to publish TikTok collect box products to target shops.</description>
+    <location>~/workspace-tts/skills/miaoshou-erp-tiktok-product-publish/miaoshou-erp-tiktok-product-publish/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>node-connect</name>
+    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>node-inspect-debugger</name>
+    <description>Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/node-inspect-debugger/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>python-debugpy</name>
+    <description>Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/python-debugpy/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>skill-creator</name>
+    <description>Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>spike</name>
+    <description>Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/spike/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>taskflow</name>
+    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>taskflow-inbox-triage</name>
+    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>
+  </skill>
+  <skill>
+    <name>weather</name>
+    <description>Current weather and forecasts with wttr.in via curl for locations, rain, temperature, travel planning.</description>
+    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>
+  </skill>
+</available_skills>

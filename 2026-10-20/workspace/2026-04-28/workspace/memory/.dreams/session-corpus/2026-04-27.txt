@@ -1,0 +1,3 @@
+[main/sessions/334bff6d-a8e4-44e4-b190-1f2579ee031d.jsonl#L6] Assistant: [[reply_to_current]] 通信正常 ✓
+[main/sessions/334bff6d-a8e4-44e4-b190-1f2579ee031d.jsonl#L18] Assistant: 已删除 openviking 配置。重启 gateway 生效。 还有个 openclaw-weixin 的警告——你还在用微信插件吗？不用的话也一并清理？
+[main/sessions/334bff6d-a8e4-44e4-b190-1f2579ee031d.jsonl#L19] User: plugins.entries.openviking: plugin disabled (disabled in config) but config is present 删除这个openviking 不在需， 是不是还在提示这个
