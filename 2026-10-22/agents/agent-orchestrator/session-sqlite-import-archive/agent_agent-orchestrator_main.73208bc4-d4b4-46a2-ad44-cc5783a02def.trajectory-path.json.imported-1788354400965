@@ -1,0 +1,6 @@
+{
+  "traceSchema": "openclaw-trajectory-pointer",
+  "schemaVersion": 1,
+  "sessionId": "73208bc4-d4b4-46a2-ad44-cc5783a02def",
+  "runtimeFile": "/home/halei/.openclaw/agents/agent-orchestrator/sessions/73208bc4-d4b4-46a2-ad44-cc5783a02def.trajectory.jsonl"
+}
