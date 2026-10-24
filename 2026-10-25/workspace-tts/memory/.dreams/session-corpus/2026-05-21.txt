@@ -1,0 +1,1 @@
+[tts/sessions/tts/1ad9e3e4-7343-4a88-b4fc-93f452d17e07.jsonl#L6] Assistant: [assistant turn failed before producing content]

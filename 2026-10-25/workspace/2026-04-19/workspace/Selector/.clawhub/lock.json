@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "linkfox-echotik-product-search": {
+      "version": "1.0.3",
+      "installedAt": 1775995081705
+    },
+    "linkfox-echotik-new-product-rank": {
+      "version": "1.0.1",
+      "installedAt": 1775995086861
+    }
+  }
+}
